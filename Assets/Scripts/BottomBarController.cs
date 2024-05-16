@@ -23,10 +23,12 @@ public class BottomBarController : MonoBehaviour
     }
     public void PlayNextSentence()
     {
-        StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
-        personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
-        personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
-     
+        
+      
+            StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
+            personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
+            personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+      
 
     }
     public bool IsCompleted()
@@ -34,6 +36,10 @@ public class BottomBarController : MonoBehaviour
         return state == State.COMPLETED;
     }
     // Update is called once per frame
+    public bool IsLastSentence()
+    {
+        return sentenceIndex + 1 == currentScene.sentences.Count;
+    }
  private IEnumerator TypeText(string text)
     {
         barText.text = "";
