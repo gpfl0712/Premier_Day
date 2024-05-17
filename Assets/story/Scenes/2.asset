@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: "\uAE30\uBD84\uC774 \uC5B4\uB584?"
+    Character: {fileID: 0}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
-  - text: "\uC544\uC9C1\uC774\uB77C\uAD6C"
-    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
-  - text: ....
-    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+  - text: "\uAE30\uBD84 \uBCC4\uB85C\uC57C"
+    Character: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
   - text: "\uADF8\uB807\uAD6C\uB098"
+    Character: {fileID: 0}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
   background: {fileID: 21300000, guid: ab742a57771106940afebe955ef0cb73, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 2bd76d092e7c3ee43b45577cfc27729d, type: 2}

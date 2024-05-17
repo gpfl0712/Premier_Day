@@ -10,7 +10,7 @@ public class MathController : MonoBehaviour
     public Button[] answerButtons; // 답안 버튼
     public TextMeshProUGUI scoreText; // 점수 텍스트
     public TextMeshProUGUI timerText; // 타이머 텍스트
-    public float timeLimit = 60f; // 문제당 제한 시간
+    public float timeLimit = 30f; // 문제당 제한 시간
 
     private string correctAnswer; // 정답
     private int score = 0; // 점수
@@ -98,9 +98,18 @@ public class MathController : MonoBehaviour
     string GenerateNumberProblem()
     {
         char operation = GetRandomOperation();
-        int number1 = Random.Range(1, 20);
-        int number2 = Random.Range(1, 20);
+        int number1 = Random.Range(1, 30);
+        int number2 = Random.Range(1, 9);
+        if(operation=='/')
+        {
+            while (number1 % number2 != 0)
+            {
+                number1 = Random.Range(1, 30);
+                number2 = Random.Range(1, 9);
+            }
+        }
         int result;
+        
         result = CalculateAnswer(number1, number2, operation);
         correctAnswer = CalculateAnswer1(number1, number2, result).ToString();
         return $"{number1} {operation} ? = {result}";
@@ -109,9 +118,17 @@ public class MathController : MonoBehaviour
     string GenerateOperationProblem()
     {
         int result;
-        int number1 = Random.Range(1, 20);
-        int number2 = Random.Range(1, 20);
+        int number1 = Random.Range(1, 30);
+        int number2 = Random.Range(1, 9);
         char operation = GetRandomOperation();
+        if (operation == '/')
+        {
+            while (number1 % number2 != 0)
+            {
+                number1 = Random.Range(1, 30);
+                number2 = Random.Range(1, 9);
+            }
+        }
         result = CalculateAnswer(number1, number2, operation);
         correctAnswer=CalculateAnswer2(number1, number2,result).ToString();
         // 연산자를 빈칸으로 대체하여 문제 생성
