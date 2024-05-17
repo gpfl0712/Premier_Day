@@ -18,9 +18,11 @@ public class StoryScene : ScriptableObject
         public List<Choice> choices;
     }
     [System.Serializable]
-    public struct Choice
+  
+    public class Choice
     {
-        public string choiceText; // 선택지 텍스트
-        public StoryScene nextScene; // 선택 시 넘어갈 씬
+        public string text; // 선택지 텍스트
+        public StoryScene nextScene; // 선택 후 이동할 다음 씬
     }
+
 }

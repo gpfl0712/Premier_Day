@@ -16,19 +16,24 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        // 선택지가 표시되지 않은 경우에만 입력 처리
+        if (!bottomBar.isChoiceDisplayed)
         {
-            if (bottomBar.IsCompleted())
+            // 스페이스 키 또는 마우스 클릭 확인
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
-                if (bottomBar.IsLastSentence())
+                if (bottomBar.IsCompleted())
                 {
-                    currentScene = currentScene.nextScene;
-                    bottomBar.PlayScene(currentScene);
-                    backgroundController.SwitchImage(currentScene.background);
-                }
-                else
-                {
-                    bottomBar.PlayNextSentence();
+                    if (bottomBar.IsLastSentence())
+                    {
+                        currentScene = currentScene.nextScene;
+                        bottomBar.PlayScene(currentScene);
+                        backgroundController.SwitchImage(currentScene.background);
+                    }
+                    else
+                    {
+                        bottomBar.PlayNextSentence();
+                    }
                 }
             }
         }

@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.UI;
+using static StoryScene;
 
 public class BottomBarController : MonoBehaviour
 {
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
     public GameObject choiceButtonPrefab; // 선택지 버튼 프리팹
-    public Transform choicesContainer; // 선택지 버튼들을 담을 컨테이너
-
+    public Transform choicesContainer; // 선택지 컨테이너
+    public BackgroundController backgroundController;
     private int sentenceIndex = -1;
     public StoryScene currentScene;
     private State state = State.COMPLETED;
+    public bool isChoiceDisplayed = false; // 선택지 표시 여부
 
     private enum State
     {
@@ -29,63 +31,23 @@ public class BottomBarController : MonoBehaviour
 
     public void PlayNextSentence()
     {
-        if (sentenceIndex < currentScene.sentences.Count - 1)
+        if (sentenceIndex + 1 < currentScene.sentences.Count)
         {
-            var sentence = currentScene.sentences[++sentenceIndex];
-            StartCoroutine(TypeText(sentence.text));
-            personNameText.text = sentence.speaker.speakerName;
-            personNameText.color = sentence.speaker.textColor;
-
-            // 선택지가 있는 경우 선택지 버튼 생성
+            sentenceIndex++;
+            StopAllCoroutines();
+            ClearChoices();
+            var sentence = currentScene.sentences[sentenceIndex];
             if (sentence.choices != null && sentence.choices.Count > 0)
             {
-                CreateChoiceButtons(sentence.choices);
-            }
-        }
-        else
-        {
-            // 모든 문장을 완료한 경우 다음 씬으로 전환
-            if (currentScene.nextScene != null)
-            {
-                PlayScene(currentScene.nextScene);
+                ShowChoices(sentence.choices);
             }
             else
             {
-                state = State.COMPLETED;
+                StartCoroutine(TypeText(sentence.text));
+                personNameText.text = sentence.speaker.speakerName;
+                personNameText.color = sentence.speaker.textColor;
             }
         }
-    }
-
-    private void CreateChoiceButtons(List<StoryScene.Choice> choices)
-    {
-        // 기존의 선택지 버튼 제거
-        foreach (Transform child in choicesContainer)
-        {
-            Destroy(child.gameObject);
-        }
-
-        // 선택지 버튼 생성
-        foreach (var choice in choices)
-        {
-            GameObject button = Instantiate(choiceButtonPrefab, choicesContainer);
-            button.GetComponentInChildren<TextMeshProUGUI>().text = choice.choiceText;
-            button.GetComponent<Button>().onClick.AddListener(() => OnChoiceSelected(choice.nextScene));
-        }
-    }
-
-    private void OnChoiceSelected(StoryScene nextScene)
-    {
-        PlayScene(nextScene); // 선택된 씬으로 전환
-    }
-
-    public bool IsCompleted()
-    {
-        return state == State.COMPLETED;
-    }
-
-    public bool IsLastSentence()
-    {
-        return sentenceIndex + 1 == currentScene.sentences.Count;
     }
 
     private IEnumerator TypeText(string text)
@@ -104,5 +66,53 @@ public class BottomBarController : MonoBehaviour
                 break;
             }
         }
+    }
+
+    private void ClearChoices()
+    {
+        foreach (Transform child in choicesContainer)
+        {
+            Destroy(child.gameObject);
+        }
+        isChoiceDisplayed = false; // 선택지가 제거되었음을 표시
+    }
+
+    private void ShowChoices(List<Choice> choices)
+    {
+        foreach (var choice in choices)
+        {
+            GameObject choiceButtonObject = Instantiate(choiceButtonPrefab, choicesContainer);
+            TextMeshProUGUI choiceText = choiceButtonObject.GetComponentInChildren<TextMeshProUGUI>();
+            choiceText.text = choice.text;
+            Choice choice1 = choice;
+            Button choiceButton = choiceButtonObject.GetComponent<Button>();
+            choiceButton.onClick.AddListener(() => OnChoiceSelected(choice1)); // 델리게이트를 사용하여 메서드 호출
+            Debug.Log("well done");
+        }
+        isChoiceDisplayed = true; // 선택지가 표시되었음을 표시
+    }
+
+    public void OnChoiceSelected(Choice choice)
+    {
+        Debug.Log("Choice selected: " + choice.text); // 선택지가 선택되었음을 로그에 출력
+        if (choice.nextScene != null)
+        {
+            PlayScene(choice.nextScene);
+            backgroundController.SwitchImage(choice.nextScene.background); // 배경 변경 요청
+        }
+        else
+        {
+            PlayNextSentence();
+        }
+    }
+
+    public bool IsCompleted()
+    {
+        return state == State.COMPLETED;
+    }
+
+    public bool IsLastSentence()
+    {
+        return sentenceIndex + 1 == currentScene.sentences.Count;
     }
 }
