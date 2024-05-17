@@ -9,6 +9,7 @@ public class StoryScene : ScriptableObject
     public List<Sentence> sentences;
     public Sprite background;
     public StoryScene nextScene;
+    public string minigame;
     [System.Serializable]
     public struct Sentence
     {
@@ -21,8 +22,8 @@ public class StoryScene : ScriptableObject
   
     public class Choice
     {
-        public string text; // 선택지 텍스트
-        public StoryScene nextScene; // 선택 후 이동할 다음 씬
+        public string text; // ?醫뤾문筌왖 ??용뮞??
+        public StoryScene nextScene; // ?醫뤾문 ????猷????쇱벉 ??
     }
 
 }

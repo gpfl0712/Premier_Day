@@ -2,63 +2,65 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // TextMeshPro 네임스페이스 추가
-
+using TMPro; // TextMeshPro ?ㅼ엫?ㅽ럹?댁뒪 異붽?
+using UnityEngine.SceneManagement;
 public class MathController : MonoBehaviour
 {
-    public TextMeshProUGUI problemText; // 문제 텍스트
-    public Button[] answerButtons; // 답안 버튼
-    public TextMeshProUGUI scoreText; // 점수 텍스트
-    public TextMeshProUGUI timerText; // 타이머 텍스트
-    public float timeLimit = 30f; // 문제당 제한 시간
+    public TextMeshProUGUI problemText; // 臾몄젣 ?띿뒪??
+    public Button[] answerButtons; // ?듭븞 踰꾪듉
+    public TextMeshProUGUI scoreText; // ?먯닔 ?띿뒪??
+    public TextMeshProUGUI timerText; // ??대㉧ ?띿뒪??
+    public float timeLimit = 30f; // 臾몄젣???쒗븳 ?쒓컙
 
-    private string correctAnswer; // 정답
-    private int score = 0; // 점수
-    private float currentTime; // 현재 시간
-    private bool isTimeUp = false; // 시간 초과 여부
+    private string correctAnswer; // ?뺣떟
+    private int score = 0; // ?먯닔
+    private float currentTime; // ?꾩옱 ?쒓컙
+    private bool isTimeUp = false; // ?쒓컙 珥덇낵 ?щ?
 
     void Start()
     {
         GenerateNewProblem();
+        currentTime = timeLimit;
     }
 
     void Update()
     {
+
         currentTime -= Time.deltaTime;
         timerText.text = "Time: " + Mathf.Max(currentTime, 0).ToString("F2");
 
         if (currentTime <= 0)
         {
-            isTimeUp = true;
-            GenerateNewProblem();
+         
+            SceneManager.LoadScene("MainStory");
         }
     }
 
     void GenerateNewProblem()
     {
-        currentTime = timeLimit;
-        isTimeUp = false;
+    
+       
 
         string problem;
         List<string> answers;
 
-        // 랜덤으로 문제 유형 선택
+        // ?쒕뜡?쇰줈 臾몄젣 ?좏삎 ?좏깮
         int problemType = Random.Range(0, 2);
 
         switch (problemType)
         {
             case 0:
-                // 올바른 숫자를 맞추는 문제 생성
+                // ?щ컮瑜??レ옄瑜?留욎텛??臾몄젣 ?앹꽦
                 problem = GenerateNumberProblem();
                 answers = GenerateNumberAnswers();
                 break;
             case 1:
-                // 올바른 사칙연산을 맞추는 문제 생성
+                // ?щ컮瑜??ъ튃?곗궛??留욎텛??臾몄젣 ?앹꽦
                 problem = GenerateOperationProblem();
                 answers = GenerateOperationAnswers();
                 break;
             default:
-                problem = ""; // 에러 방지를 위한 기본값 설정
+                problem = ""; // ?먮윭 諛⑹?瑜??꾪븳 湲곕낯媛??ㅼ젙
                 answers = new List<string>();
                 break;
         }
@@ -131,7 +133,7 @@ public class MathController : MonoBehaviour
         }
         result = CalculateAnswer(number1, number2, operation);
         correctAnswer=CalculateAnswer2(number1, number2,result).ToString();
-        // 연산자를 빈칸으로 대체하여 문제 생성
+        // ?곗궛?먮? 鍮덉뭏?쇰줈 ?泥댄븯??臾몄젣 ?앹꽦
         return $"{number1} ? {number2} = {result}";
     }
 
@@ -142,8 +144,8 @@ public class MathController : MonoBehaviour
 
         while (answers.Count < answerButtons.Length)
         {
-            string randomAnswer = Random.Range(1, 20).ToString(); // 랜덤한 숫자 생성
-            if (!answers.Contains(randomAnswer)) // 중복된 답을 방지
+            string randomAnswer = Random.Range(1, 20).ToString(); // ?쒕뜡???レ옄 ?앹꽦
+            if (!answers.Contains(randomAnswer)) // 以묐났???듭쓣 諛⑹?
             {
                 answers.Add(randomAnswer);
             }
@@ -156,7 +158,7 @@ public class MathController : MonoBehaviour
     {
         List<string> answers = new List<string>();
 
-        // 모든 사칙연산을 버튼에 추가
+        // 紐⑤뱺 ?ъ튃?곗궛??踰꾪듉??異붽?
         answers.Add("+");
         answers.Add("-");
         answers.Add("*");

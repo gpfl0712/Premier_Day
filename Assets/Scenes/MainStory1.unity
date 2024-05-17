@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 196411665}
   - component: {fileID: 196411664}
   - component: {fileID: 196411663}
+  - component: {fileID: 196411667}
   m_Layer: 5
   m_Name: ChoiceContainer
   m_TagString: Untagged
@@ -471,6 +472,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 196411661}
   m_CullTransparentMesh: 1
+--- !u!114 &196411667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196411661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83be4344c1698e146afbc93b918c90a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barText: {fileID: 54579611}
+  personNameText: {fileID: 1804912559}
+  choiceButtonPrefab: {fileID: 7662288954478654991, guid: a850afbfe31215f41a3817df7edd8890, type: 3}
+  choicesContainer: {fileID: 196411662}
+  backgroundController: {fileID: 446612679}
+  currentScene: {fileID: 11400000, guid: 52b33ace5d767c14786d504380b01091, type: 2}
+  isChoiceDisplayed: 0
 --- !u!1 &446612676
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,6 +694,7 @@ MonoBehaviour:
   choicesContainer: {fileID: 0}
   backgroundController: {fileID: 0}
   currentScene: {fileID: 0}
+  isChoiceDisplayed: 0
 --- !u!4 &772163729
 Transform:
   m_ObjectHideFlags: 0
@@ -853,6 +874,7 @@ MonoBehaviour:
   choicesContainer: {fileID: 196411662}
   backgroundController: {fileID: 446612679}
   currentScene: {fileID: 11400000, guid: 52b33ace5d767c14786d504380b01091, type: 2}
+  isChoiceDisplayed: 0
 --- !u!1 &1511828989
 GameObject:
   m_ObjectHideFlags: 0

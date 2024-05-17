@@ -674,7 +674,7 @@ MonoBehaviour:
   - {fileID: 1898148376}
   scoreText: {fileID: 2096622005}
   timerText: {fileID: 369315821}
-  timeLimit: 60
+  timeLimit: 30
 --- !u!4 &652515345
 Transform:
   m_ObjectHideFlags: 0

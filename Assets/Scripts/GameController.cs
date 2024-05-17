@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using static StoryScene;
 
 public class GameController : MonoBehaviour
 {
@@ -16,16 +18,21 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        // 선택지가 표시되지 않은 경우에만 입력 처리
+        // ?醫뤾문筌왖揶쎛 ??뽯뻻??? ??? 野껋럩??癒?춸 ??낆젾 筌ｌ꼶??
         if (!bottomBar.isChoiceDisplayed)
         {
-            // 스페이스 키 또는 마우스 클릭 확인
+            // ??쎈읂??곷뮞 ???癒?뮉 筌띾뜆????????類ㅼ뵥
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 if (bottomBar.IsCompleted())
                 {
                     if (bottomBar.IsLastSentence())
                     {
+
+                        if (!string.IsNullOrEmpty(currentScene.minigame))
+                        {
+                            LoadMiniGame(currentScene.minigame);
+                        }
                         currentScene = currentScene.nextScene;
                         bottomBar.PlayScene(currentScene);
                         backgroundController.SwitchImage(currentScene.background);
@@ -38,4 +45,13 @@ public class GameController : MonoBehaviour
             }
         }
     }
+    private void LoadMiniGame(string minigame)
+    {
+        if (minigame == "Math")
+        {
+            SceneManager.LoadScene("MathGame");
+        }
+
+    }
+
 }
