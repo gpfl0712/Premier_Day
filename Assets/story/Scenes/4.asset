@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  sentences: []
-  background: {fileID: 0}
+  sentences:
+  - text: "\uADF8\uB7F4\uC218\uC788\uC9C0"
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices:
+    - text: 
+      nextScene: {fileID: 0}
+  background: {fileID: 21300000, guid: dced0e9457d39d242905bec02ad67cf7, type: 3}
   nextScene: {fileID: 0}
+  minigame: 

@@ -32,7 +32,7 @@ public class MathController : MonoBehaviour
         if (currentTime <= 0)
         {
          
-            SceneManager.LoadScene("MainStory");
+            SceneManager.LoadScene("MainStory2");
         }
     }
 

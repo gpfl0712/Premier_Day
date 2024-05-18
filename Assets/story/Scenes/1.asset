@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\uB9CC\uB098\uC11C\uBC18\uAC00\uC6CC"
+  - text: "\uC5D0\uBC14\uC790\uB108"
     Character: {fileID: 0}
     speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
     choices: []
