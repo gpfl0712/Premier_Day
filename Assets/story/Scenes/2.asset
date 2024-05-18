@@ -13,15 +13,7 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\uAE30\uBD84\uC774 \uC5B4\uB584?"
-    Character: {fileID: 0}
-    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
-    choices: []
-  - text: 
-    Character: {fileID: 0}
-    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
-    choices: []
-  - text: "\uADF8\uB807\uAD6C\uB098"
+  - text: "2\uBC88\uC9F8Scene"
     Character: {fileID: 0}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []

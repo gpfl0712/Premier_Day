@@ -45,6 +45,7 @@ public class GameController : MonoBehaviour
     }
     private void LoadMiniGame(string minigame)
     {
+        Debug.Log("미니게임실행");
         if (minigame == "Math")
         {
             SceneManager.LoadScene("MathGame");

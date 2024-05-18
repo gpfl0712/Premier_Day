@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: choi
   m_EditorClassIdentifier: 
   speakerName: "\uCD5C\uC9C0\uBBFC"
-  textColor: {r: 0.9245283, g: 0.11338554, b: 0.79304063, a: 0}
+  textColor: {r: 0.9245283, g: 0.11338554, b: 0.79304063, a: 0.96862745}
