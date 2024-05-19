@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: 4-1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uC885\uBBFC\uC544 \uC9C0\uAE08 \uBB50 \uB4E3\uACE0 \uC788\uB294\uAC70\uC57C?"
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "(\uB178\uB798\uC124\uBA85)"
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC544\uD558 \uC7AC\uBC0C\uB294 \uB178\uB798\uB124?"
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uB108\uB3C4 \uC774 \uB178\uB798 \uC54C\uACE0\uC788\uB294\uAC70 \uC544\uB2C8\uC57C?"
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC544\uAE4C \uB108\uAC00 \uBD24\uB2E4\uACE0 \uD5C0\uB358 @@\uAC00 \uBD80\uB978
+      \uB178\uB798\uC796\uC544!"
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uD639\uC2DC \uC544\uAE4C \uAC70\uC9D3\uB9D0\uB85C \uC544\uB294\uCC99
+      \uD588\uB358\uAC74 \uC544\uB2C8\uACA0\uC9C0."
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC0AC\uC2E4 \uCE90\uB9AD\uD130 \uC774\uB984\uB3C4 \uBAA8\uB974\uACE0
+      \uC788\uB294\uAC74 \uC544\uB2C8\uACD8\uC9C0!!!!!!"
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices:
+    - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 @@ \uC796\uC544!"
+      nextScene: {fileID: 0}
+    - text: 
+      nextScene: {fileID: 0}
+    - text: 
+      nextScene: {fileID: 0}
+  - text: "\uADF8..\uADF8\uAC8C \uBB34\uC2A8 \uC18C\uB9AC\uC57C!!"
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: 
+    Character: {fileID: 0}
+    speaker: {fileID: 0}
+    choices:
+    - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 @@ \uC796\uC544!"
+      nextScene: {fileID: 0}
+    - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 ##\uC796\uC544!"
+      nextScene: {fileID: 0}
+    - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 $$\uC796\uC544!"
+      nextScene: {fileID: 0}
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  minigame: 
