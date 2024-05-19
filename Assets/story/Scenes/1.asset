@@ -14,32 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: "(\uC624\uB298 \uD558\uB8E8\uB97C \uC798 \uBCF4\uB0BC \uC218 \uC788\uC744\uAE4C..)"
-    Character: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 928ff3c7265e88044ae22a129a1beb5f, type: 3}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
   - text: "(\uC774 \uCE5C\uAD6C\uB294 \uACC4\uC18D \uAC8C\uC784\uB9CC \uD558\uACE0
       \uC788\uB124.. \uC77C\uB2E8 \uBA3C\uC800 \uC778\uC0AC\uB97C \uAC78\uC5B4\uBCFC\uAE4C..?)"
-    Character: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 5d1db66a9bf398c4fa8b7310a604a944, type: 3}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
   - text: "\uC544..\uC548\uB155? \uC9C0\uAE08 \uD558\uACE0 \uC788\uB294\uAC8C \uBB50\uC57C..?"
-    Character: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
   - text: "(\uB300\uC0AC)"
-    Character: {fileID: 0}
+    characterImage: {fileID: 0}
     speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
     choices: []
   - text: "(\uB300\uC0AC)"
-    Character: {fileID: 0}
+    characterImage: {fileID: 0}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
   - text: "(\uB300\uC0AC)"
-    Character: {fileID: 0}
+    characterImage: {fileID: 0}
     speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
     choices: []
   - text: 
-    Character: {fileID: 0}
+    characterImage: {fileID: 0}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices:
     - text: "(\uB300\uC0AC)"

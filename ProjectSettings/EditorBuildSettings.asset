@@ -5,16 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/StartScreen.unity
+    guid: 66caf365f856aac4d9c9888cf689d29c
+  - enabled: 0
+    path: Assets/Scenes/choiceScene.unity
+    guid: 0c32ee67f2d0f9d4791d0e8ce2f835fb
   - enabled: 1
     path: Assets/Scenes/MainStory1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MathGame.unity
     guid: 1b2a9b9497027dc41b31df535a9dab14
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MathResult.unity
     guid: d03f04d85c3d1d54dae6a50b47c42ff8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainStory2.unity
     guid: b46b2497f520f2045aa4ea3bc93e2cf3
   m_configObjects: {}
