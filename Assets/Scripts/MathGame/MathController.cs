@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // TextMeshPro ?ㅼ엫?ㅽ럹?댁뒪 異붽?
+using TMPro; // TextMeshPro ??쇱뿫??쎈읂??곷뮞 ?곕떽?
 using UnityEngine.SceneManagement;
 public class MathController : MonoBehaviour
 {
-    public TextMeshProUGUI problemText; // 臾몄젣 ?띿뒪??
-    public Button[] answerButtons; // ?듭븞 踰꾪듉
-    public TextMeshProUGUI scoreText; // ?먯닔 ?띿뒪??
-    public TextMeshProUGUI timerText; // ??대㉧ ?띿뒪??
-    public float timeLimit = 30f; // 臾몄젣???쒗븳 ?쒓컙
+    public TextMeshProUGUI problemText; // ?얜챷????용뮞??
+    public Button[] answerButtons; // ???툧 甕곌쑵??
+    public TextMeshProUGUI scoreText; // ?癒?땾 ??용뮞??
+    public TextMeshProUGUI timerText; // ????????용뮞??
+    public float timeLimit = 30f; // ?얜챷?????쀫립 ??볦퍢
 
-    private string correctAnswer; // ?뺣떟
-    private int score = 0; // ?먯닔
-    private float currentTime; // ?꾩옱 ?쒓컙
-    private bool isTimeUp = false; // ?쒓컙 珥덇낵 ?щ?
+    private string correctAnswer; // ?類ｋ뼗
+    private int score = 0; // ?癒?땾
+    private float currentTime; // ?袁⑹삺 ??볦퍢
+    private bool isTimeUp = false; // ??볦퍢 ?λ뜃?????
 
     void Start()
     {
@@ -31,36 +31,36 @@ public class MathController : MonoBehaviour
 
         if (currentTime <= 0)
         {
-         
-            SceneManager.LoadScene("MainStory2");
+            PlayerPrefs.SetInt("FinalScore", score);
+            SceneManager.LoadScene("MathResult");
         }
     }
 
     void GenerateNewProblem()
     {
-    
-       
+
+
 
         string problem;
         List<string> answers;
 
-        // ?쒕뜡?쇰줈 臾몄젣 ?좏삎 ?좏깮
+        // ??뺣쑁??곗쨮 ?얜챷???醫륁굨 ?醫뤾문
         int problemType = Random.Range(0, 2);
 
         switch (problemType)
         {
             case 0:
-                // ?щ컮瑜??レ옄瑜?留욎텛??臾몄젣 ?앹꽦
+                // ??而?몴???ъ쁽??筌띿쉸????얜챷????밴쉐
                 problem = GenerateNumberProblem();
                 answers = GenerateNumberAnswers();
                 break;
             case 1:
-                // ?щ컮瑜??ъ튃?곗궛??留욎텛??臾몄젣 ?앹꽦
+                // ??而?몴?????怨쀪텦??筌띿쉸????얜챷????밴쉐
                 problem = GenerateOperationProblem();
                 answers = GenerateOperationAnswers();
                 break;
             default:
-                problem = ""; // ?먮윭 諛⑹?瑜??꾪븳 湲곕낯媛??ㅼ젙
+                problem = ""; // ?癒?쑎 獄쎻뫗????袁る립 疫꿸퀡??첎???쇱젟
                 answers = new List<string>();
                 break;
         }
@@ -102,7 +102,7 @@ public class MathController : MonoBehaviour
         char operation = GetRandomOperation();
         int number1 = Random.Range(1, 30);
         int number2 = Random.Range(1, 9);
-        if(operation=='/')
+        if (operation == '/')
         {
             while (number1 % number2 != 0)
             {
@@ -111,7 +111,7 @@ public class MathController : MonoBehaviour
             }
         }
         int result;
-        
+
         result = CalculateAnswer(number1, number2, operation);
         correctAnswer = CalculateAnswer1(number1, number2, result).ToString();
         return $"{number1} {operation} ? = {result}";
@@ -132,8 +132,8 @@ public class MathController : MonoBehaviour
             }
         }
         result = CalculateAnswer(number1, number2, operation);
-        correctAnswer=CalculateAnswer2(number1, number2,result).ToString();
-        // ?곗궛?먮? 鍮덉뭏?쇰줈 ?泥댄븯??臾몄젣 ?앹꽦
+        correctAnswer = CalculateAnswer2(number1, number2, result).ToString();
+        // ?怨쀪텦?癒? ??뜆萸??곗쨮 ??筌ｋ똾釉???얜챷????밴쉐
         return $"{number1} ? {number2} = {result}";
     }
 
@@ -144,8 +144,8 @@ public class MathController : MonoBehaviour
 
         while (answers.Count < answerButtons.Length)
         {
-            string randomAnswer = Random.Range(1, 20).ToString(); // ?쒕뜡???レ옄 ?앹꽦
-            if (!answers.Contains(randomAnswer)) // 以묐났???듭쓣 諛⑹?
+            string randomAnswer = Random.Range(1, 20).ToString(); // ??뺣쑁????ъ쁽 ??밴쉐
+            if (!answers.Contains(randomAnswer)) // 餓λ쵎??????뱽 獄쎻뫗?
             {
                 answers.Add(randomAnswer);
             }
@@ -158,7 +158,7 @@ public class MathController : MonoBehaviour
     {
         List<string> answers = new List<string>();
 
-        // 紐⑤뱺 ?ъ튃?곗궛??踰꾪듉??異붽?
+        // 筌뤴뫀諭?????怨쀪텦??甕곌쑵????곕떽?
         answers.Add("+");
         answers.Add("-");
         answers.Add("*");
@@ -211,13 +211,13 @@ public class MathController : MonoBehaviour
         }
     }
 
-char  CalculateAnswer2(int number1, int number2, int number3)
-    {   
-        if(number1+number2==number3)
+    char CalculateAnswer2(int number1, int number2, int number3)
+    {
+        if (number1 + number2 == number3)
         {
             return '+';
         }
-        else if(number1-number2==number3)
+        else if (number1 - number2 == number3)
         {
             return '-';
 
