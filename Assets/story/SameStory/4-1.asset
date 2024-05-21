@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: 4-1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uC885\uBBFC\uC544 \uC9C0\uAE08 \uBB50 \uB4E3\uACE0 \uC788\uB294\uAC70\uC57C?"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uC544 \uC774\uAC70 \uC774\uBC88\uC5D0 \uC0C8\uB85C \uB098\uC628 \uC6E1\uC2E0
+      \uB178\uB798!"
+    characterImage: {fileID: 21300000, guid: c7a541116bda864479257c7ca8db7166, type: 3}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
+    choices: []
+  - text: "\uC544\uD558 \uB178\uB798\uAC00 \uC798 \uB098\uC654\uB098 \uBCF4\uB124?"
+    characterImage: {fileID: 21300000, guid: 20b64595f88337d4b91aab375426fd9e, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uB108\uB3C4 \uC774 \uB178\uB798 \uC54C\uACE0\uC788\uB294\uAC70 \uC544\uB2C8\uC57C?"
+    characterImage: {fileID: 21300000, guid: a0a63065c1819f240970696747e13378, type: 3}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
+    choices: []
+  - text: "\uC544\uAE4C \uB108\uAC00 \uC88B\uB2E4\uACE0 \uD588\uB358 \uCE90\uB9AD\uD130\uAC00
+      \uBD80\uB978 \uB178\uB798\uC796\uC544!"
+    characterImage: {fileID: 21300000, guid: 286ddbed900922046b102da853cf7df3, type: 3}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
+    choices: []
+  - text: "\uD639\uC2DC \uC544\uAE4C \uAC70\uC9D3\uB9D0\uB85C \uC544\uB294\uCC99
+      \uD588\uB358\uAC74 \uC544\uB2C8\uACA0\uC9C0."
+    characterImage: {fileID: 21300000, guid: a0a63065c1819f240970696747e13378, type: 3}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
+    choices: []
+  - text: "\uC0AC\uC2E4 \uCE90\uB9AD\uD130 \uC774\uB984\uB3C4 \uBAA8\uB974\uACE0
+      \uC788\uB294\uAC74 \uC544\uB2C8\uACD8\uC9C0!!!!!!"
+    characterImage: {fileID: 21300000, guid: 286ddbed900922046b102da853cf7df3, type: 3}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
+    choices:
+    - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 @@ \uC796\uC544!"
+      Good: 0
+      HasItem: {fileID: 0}
+      nextScene: {fileID: 0}
+    - text: 
+      Good: 0
+      HasItem: {fileID: 0}
+      nextScene: {fileID: 0}
+    - text: 
+      Good: 0
+      HasItem: {fileID: 0}
+      nextScene: {fileID: 0}
+  - text: "\uADF8..\uADF8\uAC8C \uBB34\uC2A8 \uC18C\uB9AC\uC57C!!"
+    characterImage: {fileID: 21300000, guid: 7cb321d6f2dfac54789569a4fa106918, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices:
+    - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 \uBD80\uB9AC\uB098\uC796\uC544!"
+      Good: 0
+      HasItem: {fileID: 0}
+      nextScene: {fileID: 11400000, guid: 3b169796c2c8ea9469a0d07df92f00d3, type: 2}
+    - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 \uBD88\uC774\uB098\uC796\uC544!"
+      Good: 0
+      HasItem: {fileID: 0}
+      nextScene: {fileID: 11400000, guid: 3e98542bc155a744ea6e37c51d4e47f9, type: 2}
+    - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 \uD478\uB9AC\uB098\uC796\uC544!"
+      Good: 0
+      HasItem: {fileID: 0}
+      nextScene: {fileID: 11400000, guid: 3e98542bc155a744ea6e37c51d4e47f9, type: 2}
+  background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
+  nextScene: {fileID: 11400000, guid: 3b169796c2c8ea9469a0d07df92f00d3, type: 2}
+  minigame: 

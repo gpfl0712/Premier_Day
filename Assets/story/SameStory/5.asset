@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: 5
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uC790 \uC624\uB298\uC740 \uC6D0\uC18C\uC758 \uBD88\uAF43 \uBC18\uC751
+      \uC2E4\uD5D8\uC744 \uD1B5\uD574\uC11C"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: ba5d4aa7cb927e14d81da65c88e17fd4, type: 2}
+    choices: []
+  - text: "\uAE08\uC18D\uBCC4\uB85C \uC5B4\uB5A4 \uBD88\uAF43\uC0C9\uC744 \uAC16\uB294\uC9C0
+      \uC54C\uC544\uBCF4\uB3C4\uB85D \uD558\uACA0\uC2B5\uB2C8\uB2E4"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: ba5d4aa7cb927e14d81da65c88e17fd4, type: 2}
+    choices: []
+  - text: "\uC2E4\uD5D8\uC774 \uB05D\uB098\uBA74 \uC2E4\uD5D8 \uBCF4\uACE0\uC11C\uB97C
+      \uC791\uC131\uD574\uC11C \uB0B4\uB3C4\uB85D \uD558\uC138\uC694"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: ba5d4aa7cb927e14d81da65c88e17fd4, type: 2}
+    choices: []
+  - text: "\uC804\uD559\uC0DD\uC740 \uBC18\uC7A5\uC778 \uC5F0\uC218\uAC00 \uC788\uB294
+      \uC870\uC5D0 \uB4E4\uC5B4\uAC00\uB3C4\uB85D \uD558\uC790"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: ba5d4aa7cb927e14d81da65c88e17fd4, type: 2}
+    choices: []
+  - text: "\uB135.."
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uAC19\uC740 \uC870\uB77C\uB2C8 \uC798\uB410\uB2E4!"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: ...
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC5B4.. \uADF8\uB7EC\uAC8C \uB2E4\uD589\uC774\uB2E4.."
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "( \uD5C9 \uC5F0\uC218\uB791 \uC9C0\uBBFC\uC774\uB791 \uAC19\uC740 \uC870\uC600\uAD6C\uB098!...)"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "( \uC73C\uC73C.. \uB458\uC774 \uB610 \uC2F8\uC6B0\uB294 \uAC74 \uC544\uB2C8\uACA0\uC9C0..?
+      )"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC790 \uADF8\uB7FC \uBC14\uB85C \uC2E4\uD5D8 \uC2DC\uC791\uD558\uB3C4\uB85D
+      \uD558\uC790!"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC5B4.. \uC77C\uB2E8 \uC6B0\uB9AC \uC2E4\uD5D8 \uC8FC\uC81C\uAC00 \uBB50\uC600\uB354\uB77C..?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uAE08\uC18D\uBCC4 \uBD88\uAF43\uC0C9\uC744 \uC54C\uC544\uBCF4\uB77C\uACE0
+      \uD558\uC168\uC5B4."
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC77C\uB2E8 \uC804\uD559\uC0DD \uB108\uB294 \uBCF4\uACE0\uC11C\uB97C
+      \uC4F0\uACE0, "
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uCD5C\uC9C0\uBBFC \uB108\uB294 \uC2E4\uD5D8\uC5D0 \uD544\uC694\uD55C
+      \uB3C4\uAD6C\uB97C \uC900\uBE44\uD574"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uADC0\uCC2E\uAC8C \uC65C \uB0B4\uAC00 \uAC00\uC838\uC640\uC57C \uD55C\uB2E4\uB294\uAC70\uC57C"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uB108\uB294 \uC549\uC544\uC11C \uC2E4\uD5D8\uB9CC \uD558\uAC8C?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uB108\uB098 \uC804\uD559\uC0DD\uC774 \uB3C4\uAD6C \uCC59\uAE30\uACE0
+      \uB0B4\uAC00 \uC2E4\uD5D8\uD558\uBA74 \uB418\uB294\uAC70\uC796\uC544?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uBD88\uC744 \uB2E4\uB8E8\uB294 \uC2E4\uD5D8\uC774\uB77C \uC548\uC804\uC774
+      \uC911\uC694\uD55C\uB370 \uBB34\uC2A8 \uC77C\uC774 \uC77C\uC5B4\uB0A0 \uC904
+      \uC54C\uACE0 \uB110 \uC2DC\uCF1C?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uADF8\uB9AC\uACE0 \uC804\uD559\uC0DD\uC740 \uC624\uB298 \uC804\uD559\uC640\uC11C
+      \uC7A5\uBE44 \uC704\uCE58\uB3C4 \uC798 \uBAA8\uB974\uC796\uC544"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC774\uC820 \uB300\uB193\uACE0 \uC2DC\uBE44\uAC70\uB124 \u314B\u314B"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "( \uB044\uC751.. \uACB0\uAD6D \uB610 \uC2F8\uC6B0\uB294\uAD6C\uB098..
+      )"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC560\uB4E4\uC544.. \uC77C\uB2E8 \uC9C4\uC815\uD558\uACE0.."
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC9C4\uC815\uD558\uAC8C \uC0DD\uACBC\uC5B4?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC7E4\uAC00 \uB300\uB193\uACE0 \uC2DC\uBE44 \uAC70\uB294 \uAC8C \uC548
+      \uBCF4\uC5EC?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uB098\uB294 \uC2E4\uD5D8\uB3C4 \uC81C\uB300\uB85C \uBABB\uD55C\uB2E4\uACE0
+      \uC0DD\uAC01 \uD558\uB294\uAC74\uAC00 \u314B\u314B"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC5F0.. \uC5F0\uC218\uC57C \uADF8\uB7F0 \uC758\uBBF8\uB85C \uB9D0\uD55C\uAC74
+      \uC544\uB2C8\uC5C8\uC9C0..?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uB9DE\uB294\uB3A8? "
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uD56D\uC0C1 \uAD50\uCE59 \uC5B4\uAE30\uB294 \uC0AC\uB78C\uC774 \uC2E4\uD5D8
+      \uADDC\uCE59\uC740 \uC9C0\uD0A8\uB2E4\uB294\uAC78 \uC5B4\uB5BB\uAC8C \uBBFF\uC5B4?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC9C4\uC9DC \uC5B4\uC774\uAC00 \uC5C6\uB124 \u314B\u314B?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC804\uD559\uC0DD \uB108\uB294 \uC800\uAC8C \uB9D0\uC774 \uB41C\uB2E4\uACE0
+      \uC0DD\uAC01\uD574?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices:
+    - text: "\uB41C\uB2E4"
+      Good: 0
+      HasItem: {fileID: 0}
+      nextScene: {fileID: 0}
+    - text: "\uC548 \uB41C\uB2E4"
+      Good: 0
+      HasItem: {fileID: 0}
+      nextScene: {fileID: 0}
+  background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
+  nextScene: {fileID: 0}
+  minigame: 
