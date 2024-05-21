@@ -15,7 +15,7 @@ public class StoryScene : ScriptableObject
     public struct Sentence
     {
         public string text;
-        public Sprite characterImage; // 캐릭터 이미지 추가
+        public Sprite characterImage; // 筌?Ŧ??????筌왖 ?곕떽?
         public Speaker speaker;
         public List<Choice> choices;
     }
@@ -24,6 +24,8 @@ public class StoryScene : ScriptableObject
     public class Choice
     {
         public string text;
+        public bool Good;
+        public StoryScene HasItem;
         public StoryScene nextScene;
     }
 }

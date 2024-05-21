@@ -13,18 +13,34 @@ public class BottomBarController : MonoBehaviour
     public GameObject choiceButtonPrefab;
     public Transform choicesContainer;
     public BackgroundController backgroundController;
-    public Image characterImageUI; // 캐릭터 이미지를 표시할 UI Image
+    public Image characterImageUI; // 筌?Ŧ??????筌왖????뽯뻻??UI Image
 
     private int sentenceIndex = -1;
     public StoryScene currentScene;
     private State state = State.COMPLETED;
     public bool isChoiceDisplayed = false;
-
+    private string currentStory;
+    private int like = 20;
+    private bool mychou;
     private enum State
     {
         PLAYING, COMPLETED
     }
-
+    void Start()
+    {
+        // ??λ맂 ?꾩옱 ?ㅽ넗由??뺣낫瑜?媛?몄샂
+        currentStory = PlayerPrefs.GetString("CurrentStory");
+        mychou= (PlayerPrefs.GetInt("mychou", 0) == 1);
+        if(mychou==true)
+        {
+            like += 20;
+        }
+        Debug.Log("Current Story: " + currentStory);
+    }
+    private void Update()
+    {
+        PlayerPrefs.SetInt("like",like);
+    }
     public void PlayScene(StoryScene scene)
     {
         currentScene = scene;
@@ -39,6 +55,7 @@ public class BottomBarController : MonoBehaviour
             sentenceIndex++;
             StopAllCoroutines();
             ClearChoices();
+            Debug.Log("like" + like);
             var sentence = currentScene.sentences[sentenceIndex];
             if (sentence.choices != null && sentence.choices.Count > 0)
             {
@@ -50,7 +67,7 @@ public class BottomBarController : MonoBehaviour
                 personNameText.text = sentence.speaker.speakerName;
                 personNameText.color = sentence.speaker.textColor;
 
-                // 캐릭터 이미지를 설정
+                // 筌?Ŧ??????筌왖????쇱젟
                 if (characterImageUI != null)
                 {
                     characterImageUI.sprite = sentence.characterImage;
@@ -103,10 +120,67 @@ public class BottomBarController : MonoBehaviour
 
     public void OnChoiceSelected(Choice choice)
     {
-        if (choice.nextScene != null)
+        bool keyring = (PlayerPrefs.GetInt("keyring", 0) == 1);
+        bool soccershoes = (PlayerPrefs.GetInt("soccershoes", 0) == 1);
+        bool brickbear = (PlayerPrefs.GetInt("brickbear", 0) == 1);
+        if(choice.Good==true)
         {
-            PlayScene(choice.nextScene);
-            backgroundController.SwitchImage(choice.nextScene.background);
+            like += 5;
+        }
+        else
+        {
+            like -= 2;
+        }
+        if (choice.nextScene != null)
+        {   
+            
+            if (currentStory == "Han")
+            {
+                
+            }
+            if (currentStory == "Choi")
+            {
+                if (brickbear == true)
+                {
+                    Debug.Log("brickbear"+brickbear);
+                    PlayScene(choice.HasItem);
+                    backgroundController.SwitchImage(choice.HasItem.background);
+                }
+                else
+                {
+                    Debug.Log("brickbear:" + brickbear);
+                    PlayScene(choice.nextScene);
+                    backgroundController.SwitchImage(choice.nextScene.background);
+                }
+            }
+            if (currentStory == "Kang")
+            {
+                if(soccershoes==true)
+                {
+                    PlayScene(choice.HasItem);
+                    backgroundController.SwitchImage(choice.HasItem.background);
+                }
+                else
+                {
+                    PlayScene(choice.nextScene);
+                    backgroundController.SwitchImage(choice.nextScene.background);
+                }
+            }
+            if (currentStory == "Oh")
+            {
+                if (keyring == true)
+                {
+                    PlayScene(choice.HasItem);
+                    backgroundController.SwitchImage(choice.HasItem.background);
+                }
+                else
+                {
+                    PlayScene(choice.nextScene);
+                    backgroundController.SwitchImage(choice.nextScene.background);
+                }
+            }
+        
+           
         }
         else
         {
