@@ -10,32 +10,17 @@ public class ResultController : MonoBehaviour
     private string currentstory;
     void Start()
     {
-        // PlayerPrefs?먯꽌 ?먯닔瑜?遺덈윭????띿뒪?몄뿉 ?ㅼ젙
+        // PlayerPrefs?癒?퐣 ?癒?땾???븍뜄???????용뮞?紐꾨퓠 ??쇱젟
         int finalScore = PlayerPrefs.GetInt("FinalScore", 0);
         scoreText.text = "Final Score: " + finalScore.ToString();
         currentstory=PlayerPrefs.GetString("CurrentStory");
     }
 
-    // 踰꾪듉 ?대┃ ???몄텧?섎뒗 硫붿꽌??
+    // 甕곌쑵?????????紐꾪뀱??롫뮉 筌롫뗄苑??
     public void GoToMainStory()
     {
-        // MainStory2 ?ъ쑝濡??대룞
-        if(currentstory=="Choi")
-        {
-            SceneManager.LoadScene("MainStory2_choi");
-        }
-        if (currentstory == "Han")
-        {
-            SceneManager.LoadScene("MainStory2_han");
-        }
-        if (currentstory == "Oh")
-        {
-            SceneManager.LoadScene("MainStory2_oh");
-        }
-        if (currentstory == "Kang")
-        {
-            SceneManager.LoadScene("MainStory2_kang");
-        }
+        // MainStory2 ???앮에???猷?
+        SceneManager.LoadScene("SameScene");
         
     }
 }
