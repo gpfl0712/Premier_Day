@@ -10,6 +10,8 @@ public class StoryScene : ScriptableObject
     public Sprite background;
     public StoryScene nextScene;
     public string minigame;
+    public bool IsEnding=false;
+
 
     [System.Serializable]
     public struct Sentence
