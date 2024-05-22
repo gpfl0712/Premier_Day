@@ -80,3 +80,5 @@ MonoBehaviour:
   background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
   nextScene: {fileID: 11400000, guid: 3b169796c2c8ea9469a0d07df92f00d3, type: 2}
   minigame: 
+  IsEnding: 0
+  time: "4\uAD50\uC2DC"

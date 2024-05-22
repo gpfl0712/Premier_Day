@@ -29,3 +29,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: e51b0a7c3aa592f4d9d925861767084d, type: 2}
   minigame: 
   IsEnding: 0
+  time: "\uC26C\uB294\uC2DC\uAC04"

@@ -20,3 +20,5 @@ MonoBehaviour:
   background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
   nextScene: {fileID: 11400000, guid: 2bc0fb2f4a367fc40b61e4dd497497d5, type: 2}
   minigame: 
+  IsEnding: 0
+  time: "3\uAD50\uC2DC"
