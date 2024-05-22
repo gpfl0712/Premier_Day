@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SelectController : MonoBehaviour
 {
     private string currentStory;
     private bool keyring = false;
-    private bool mychou= false;
+    private bool mychou = false;
     private bool soccershoes = false;
     private bool brickbear = false;
+    private int selectedCount = 0; // 선택된 아이템의 수를 추적하는 변수
+
+    public Image keyringImage;
+    public Image mychouImage;
+    public Image soccershoesImage;
+    public Image brickbearImage;
 
     // Start is called before the first frame update
     void Start()
     {
-      
         currentStory = PlayerPrefs.GetString("CurrentStory");
         Debug.Log("Current Story: " + currentStory);
         keyring = PlayerPrefs.GetInt("keyring", 0) == 1;
@@ -26,37 +32,64 @@ public class SelectController : MonoBehaviour
         Debug.Log("Initial mychou: " + mychou);
         Debug.Log("Initial soccershoes: " + soccershoes);
         Debug.Log("Initial brickbear: " + brickbear);
-        // ?댁쟾????λ맂 ?꾩씠???좏깮 ?뺣낫媛 ?덈뒗吏 ?뺤씤?섍퀬 媛?몄샂
 
+        // 초기 상태에 따라 이미지를 설정
+        keyringImage.gameObject.SetActive(keyring);
+        mychouImage.gameObject.SetActive(mychou);
+        soccershoesImage.gameObject.SetActive(soccershoes);
+        brickbearImage.gameObject.SetActive(brickbear);
+
+        // 선택된 아이템 수 갱신
+        
     }
 
     public void OnkeyringClick()
     {
-        keyring = true;
-        PlayerPrefs.SetInt("keyring", keyring ? 1 : 0);
-        Debug.Log("keyring Selected: " + keyring);
+        if (!keyring && selectedCount < 2) // 아직 선택되지 않았고, 선택된 아이템이 2개 미만일 때만
+        {
+            keyring = true;
+            PlayerPrefs.SetInt("keyring", keyring ? 1 : 0);
+            Debug.Log("keyring Selected: " + keyring);
+            keyringImage.gameObject.SetActive(keyring);
+            selectedCount++;
+        }
     }
 
     public void OnmychouClick()
     {
-         mychou= true;
-        PlayerPrefs.SetInt("mychou", mychou ? 1 : 0);
-        Debug.Log("mychou Selected: " + mychou);
+        if (!mychou && selectedCount < 2) // 아직 선택되지 않았고, 선택된 아이템이 2개 미만일 때만
+        {
+            mychou = true;
+            PlayerPrefs.SetInt("mychou", mychou ? 1 : 0);
+            Debug.Log("mychou Selected: " + mychou);
+            mychouImage.gameObject.SetActive(mychou);
+            selectedCount++;
+        }
     }
 
     public void OnsoccershoesClick()
     {
-        soccershoes = true;
-        PlayerPrefs.SetInt("soccershoes", soccershoes ? 1 : 0);
-        Debug.Log("soccershoes Selected: " + soccershoes);
-    }
-    public void OnbrickbearClick()
-    {
-        brickbear = true;
-        PlayerPrefs.SetInt("brickbear", brickbear ? 1 : 0);
-        Debug.Log("brickbear Selected: " + brickbear);
+        if (!soccershoes && selectedCount < 2) // 아직 선택되지 않았고, 선택된 아이템이 2개 미만일 때만
+        {
+            soccershoes = true;
+            PlayerPrefs.SetInt("soccershoes", soccershoes ? 1 : 0);
+            Debug.Log("soccershoes Selected: " + soccershoes);
+            soccershoesImage.gameObject.SetActive(soccershoes);
+            selectedCount++;
+        }
     }
 
+    public void OnbrickbearClick()
+    {
+        if (!brickbear && selectedCount < 2) // 아직 선택되지 않았고, 선택된 아이템이 2개 미만일 때만
+        {
+            brickbear = true;
+            PlayerPrefs.SetInt("brickbear", brickbear ? 1 : 0);
+            Debug.Log("brickbear Selected: " + brickbear);
+            brickbearImage.gameObject.SetActive(brickbear);
+            selectedCount++;
+        }
+    }
 
     public void HandleStorySelection()
     {

@@ -13,8 +13,8 @@ public class BottomBarController : MonoBehaviour
     public GameObject choiceButtonPrefab;
     public Transform choicesContainer;
     public BackgroundController backgroundController;
-    public Image characterImageUI; // 筌?Ŧ??????筌왖????뽯뻻??UI Image
-
+    public Image characterImageUI; // 嶺?큔???????嶺뚯솘?????戮?뻣??UI Image
+    public TextMeshProUGUI time;
     private int sentenceIndex = -1;
     public StoryScene currentScene;
     private State state = State.COMPLETED;
@@ -28,7 +28,7 @@ public class BottomBarController : MonoBehaviour
     }
     void Start()
     {
-        // ??λ맂 ?꾩옱 ?ㅽ넗由??뺣낫瑜?媛?몄샂
+        // ???貫留??袁⑹삺 ??쎈꽅???類ｋ궖??揶쎛?紐꾩긾
         currentStory = PlayerPrefs.GetString("CurrentStory");
         mychou= (PlayerPrefs.GetInt("mychou", 0) == 1);
         if(mychou==true)
@@ -56,6 +56,7 @@ public class BottomBarController : MonoBehaviour
             StopAllCoroutines();
             ClearChoices();
             Debug.Log("like" + like);
+            time.text=currentScene.time.ToString();
             var sentence = currentScene.sentences[sentenceIndex];
             if (sentence.choices != null && sentence.choices.Count > 0)
             {
@@ -67,7 +68,7 @@ public class BottomBarController : MonoBehaviour
                 personNameText.text = sentence.speaker.speakerName;
                 personNameText.color = sentence.speaker.textColor;
 
-                // 筌?Ŧ??????筌왖????쇱젟
+                // 嶺?큔???????嶺뚯솘??????깆젧
                 if (characterImageUI != null)
                 {
                     characterImageUI.sprite = sentence.characterImage;
@@ -136,7 +137,8 @@ public class BottomBarController : MonoBehaviour
             
             if (currentStory == "Han")
             {
-                
+                PlayScene(choice.nextScene);
+                backgroundController.SwitchImage(choice.nextScene.background);
             }
             if (currentStory == "Choi")
             {

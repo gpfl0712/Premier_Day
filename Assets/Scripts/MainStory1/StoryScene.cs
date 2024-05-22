@@ -11,13 +11,13 @@ public class StoryScene : ScriptableObject
     public StoryScene nextScene;
     public string minigame;
     public bool IsEnding=false;
-
+    public string time;
 
     [System.Serializable]
     public struct Sentence
     {
         public string text;
-        public Sprite characterImage; // 筌?Ŧ??????筌왖 ?곕떽?
+        public Sprite characterImage; // 嶺?큔???????嶺뚯솘? ?怨뺣뼺?
         public Speaker speaker;
         public List<Choice> choices;
     }

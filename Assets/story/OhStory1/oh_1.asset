@@ -81,3 +81,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 4a67ab171e2d8cc4aa1ce1120529ab59, type: 2}
   minigame: 
   IsEnding: 0
+  time: "1\uAD50\uC2DC"
