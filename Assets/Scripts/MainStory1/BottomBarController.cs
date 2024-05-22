@@ -142,7 +142,7 @@ public class BottomBarController : MonoBehaviour
             {
                 if (brickbear == true)
                 {
-                    Debug.Log("brickbear"+brickbear);
+                    Debug.Log("brickbear:"+brickbear);
                     PlayScene(choice.HasItem);
                     backgroundController.SwitchImage(choice.HasItem.background);
                 }
