@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1112258440}
+    - target: {fileID: 5836465654666982658, guid: 85a58970edaef6443a71309fcc1513a9, type: 3}
+      propertyPath: friendDetailPrefab
+      value: 
+      objectReference: {fileID: 1909818163581914419, guid: 6b7b5de5f06d4e2419e6ea00b132f677, type: 3}
     - target: {fileID: 8126011040116255759, guid: 85a58970edaef6443a71309fcc1513a9, type: 3}
       propertyPath: m_Name
       value: Button (5)
@@ -614,6 +618,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1112258440}
+    - target: {fileID: 5836465654666982658, guid: 85a58970edaef6443a71309fcc1513a9, type: 3}
+      propertyPath: friendDetailPrefab
+      value: 
+      objectReference: {fileID: 1909818163581914419, guid: 6b7c92a50d40bcd4ebaec03a3d41f4f7, type: 3}
     - target: {fileID: 8126011040116255759, guid: 85a58970edaef6443a71309fcc1513a9, type: 3}
       propertyPath: m_Name
       value: Button (6)
@@ -1698,6 +1706,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1112258440}
+    - target: {fileID: 5836465654666982658, guid: 85a58970edaef6443a71309fcc1513a9, type: 3}
+      propertyPath: friendDetailPrefab
+      value: 
+      objectReference: {fileID: 1909818163581914419, guid: 11c7883305f4f784283a2e3164e9f8d1, type: 3}
     - target: {fileID: 8126011040116255759, guid: 85a58970edaef6443a71309fcc1513a9, type: 3}
       propertyPath: m_Name
       value: Button (3)

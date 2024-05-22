@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: 3_han
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uC544\uC774\uD15C \uC720\uBB34 \uC7A5\uBA74 \uBBF8\uAD6C\uD604"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
+  nextScene: {fileID: 11400000, guid: 2bc0fb2f4a367fc40b61e4dd497497d5, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "3\uAD50\uC2DC"
