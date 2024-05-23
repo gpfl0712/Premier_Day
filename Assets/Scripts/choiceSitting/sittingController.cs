@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SittingController : MonoBehaviour
 {
-    // ???袁れ넎???袁る립 筌롫뗄苑??뺣굶
+    // ????ш낄援?????ш낄援η뵳?癲ル슢??袁λ빝??筌먲퐡??
     public void LoadMainStory_choi()
     {
         PlayerPrefs.SetString("CurrentStory","Choi");
