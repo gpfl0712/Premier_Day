@@ -66,6 +66,7 @@ public class MusicGameManager : MonoBehaviour
 
     public void EndGame()
     {
+        PlayerPrefs.SetInt("FinalScore_music", currentScore);
         _EndGameUI.SetActive(true);
         _EndGameUI.transform.Find("FinalScore").GetComponent<TMP_Text>().text = "Final Score: " + currentScore;
 

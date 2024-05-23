@@ -19,6 +19,9 @@ public class EndingController : MonoBehaviour
     {
         like = PlayerPrefs.GetInt("like", 0);
         minigame = PlayerPrefs.GetInt("FinalScore");
+     /*   minigame += PlayerPrefs.GetInt("FinalScore_exe");
+        minigame += PlayerPrefs.GetInt("FinalScore_music");*/
+
         totalscore = like + minigame;
         UpdateScoreText(); 
     }
@@ -27,9 +30,9 @@ public class EndingController : MonoBehaviour
 
     private void UpdateScoreText()
     {
-        StartCoroutine(TypeText(scoreText, "호감도: " + like.ToString()));
-        StartCoroutine(TypeText(minigamescore, "미니게임점수: " + minigame.ToString()));
-        StartCoroutine(TypeText(total, "총점수: " + totalscore.ToString()));
+        StartCoroutine(TypeText(scoreText, "호감도" + like.ToString()));
+        StartCoroutine(TypeText(minigamescore, "미니게임점수 " + minigame.ToString()));
+        StartCoroutine(TypeText(total, "총점수" + totalscore.ToString()));
     }
     private IEnumerator TypeText(TextMeshProUGUI textComponent, string text)
     {
