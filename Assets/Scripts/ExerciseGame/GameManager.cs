@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         _EndGameUI.SetActive(true);
-        _EndGameUI.transform.FindChild("FinalScore").GetComponent<TMP_Text>().text = "Final Score: " + score;
+        _EndGameUI.transform.Find("FinalScore").GetComponent<TMP_Text>().text = "Final Score: " + score;
     }
 
     public void NextScene()

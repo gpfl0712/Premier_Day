@@ -2,23 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EndingController : MonoBehaviour
 {
+    private int totalscore;
     private int like;
-    public TextMeshProUGUI scoreText; // TextMeshProUGUI 객체를 public으로 선언하여 Unity 에디터에서 할당 가능하게 합니다.
-
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI minigamescore;
+    public TextMeshProUGUI total;
+    private int minigame;
+    public float typingSpeed = 0.05f;
     // Start is called before the first frame update
     void Start()
     {
-        like = PlayerPrefs.GetInt("like", 0); // like 점수를 PlayerPrefs에서 가져옵니다.
-        UpdateScoreText(); // 시작할 때 점수를 업데이트합니다.
+        like = PlayerPrefs.GetInt("like", 0);
+        minigame = PlayerPrefs.GetInt("FinalScore");
+        totalscore = like + minigame;
+        UpdateScoreText(); 
     }
 
 
 
     private void UpdateScoreText()
     {
-        scoreText.text = "Like: " + like.ToString(); // 점수를 텍스트로 변환하여 TextMeshProUGUI 객체에 설정합니다.
+        StartCoroutine(TypeText(scoreText, "호감도: " + like.ToString()));
+        StartCoroutine(TypeText(minigamescore, "미니게임점수: " + minigame.ToString()));
+        StartCoroutine(TypeText(total, "총점수: " + totalscore.ToString()));
+    }
+    private IEnumerator TypeText(TextMeshProUGUI textComponent, string text)
+    {
+        textComponent.text = "";
+        foreach (char letter in text)
+        {
+            textComponent.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+    }
+    public void restart()
+    {
+        SceneManager.LoadScene("StartScreen");
     }
 }
