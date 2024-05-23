@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: 4_default_nokey
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uC885\uBBFC\uC544! \uC9C0\uAE08 \uBB34\uC2A8 \uB178\uB798 \uB4E3\uACE0
+      \uC788\uB294\uAC70\uC57C?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
+    choices: []
+  - text: "\uC774\uAC74 tsumiki\uC5D0 shampoo \uB77C\uB294 \uACE1\uC774\uB2E4.."
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
+    choices: []
+  - text: "\uC544\uD558 Jpop \uC88B\uC544\uD558\uB294\uAD6C\uB098?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
+    choices: []
+  - text: "\uADF8\uB807\uB2E4, \uB108\uAC00 \uC88B\uC544\uD558\uB294 \uC7A5\uB974\uB294
+      \uBB50\uC9C0?"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
+    choices:
+    - text: "\uB098\uB3C4 Jpop \uC88B\uC544\uD574!"
+      Good: 1
+      HasItem: {fileID: 11400000, guid: ebfb6182562346a4a9488cf3d61159f8, type: 2}
+      nextScene: {fileID: 11400000, guid: ebfb6182562346a4a9488cf3d61159f8, type: 2}
+    - text: "\uB098\uB294 \uC544\uBB34\uB798\uB3C4 \uC6B0\uB9AC\uB098\uB77C Kpop\uC774
+        \uC88B\uC740 \uAC83 \uAC19\uC544"
+      Good: 0
+      HasItem: {fileID: 11400000, guid: 0459490abf8cc17488ff627ad8204f29, type: 2}
+      nextScene: {fileID: 11400000, guid: 0459490abf8cc17488ff627ad8204f29, type: 2}
+    - text: "Cpop \uB4E4\uC5B4\uBD24\uC5B4?  Liu da na \uC758 520Hz \uB4E4\uC5B4\uBD10!"
+      Good: 0
+      HasItem: {fileID: 11400000, guid: 0459490abf8cc17488ff627ad8204f29, type: 2}
+      nextScene: {fileID: 11400000, guid: 0459490abf8cc17488ff627ad8204f29, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 4e18cee1db5b61d458e9a509cf3da76f, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "4\uAD50\uC2DC"
