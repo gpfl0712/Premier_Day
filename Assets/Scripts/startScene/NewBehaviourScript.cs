@@ -8,12 +8,13 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // 초기 설정이 필요한 경우 여기서 설정
+        // 珥덇린 ?ㅼ젙???꾩슂??寃쎌슦 ?ш린???ㅼ젙
     }
 
-    // 버튼 클릭 시 호출되는 메서드
+    // 踰꾪듉 ?대┃ ???몄텧?섎뒗 硫붿꽌??
     public void StartchoiceScene()
     {
-        SceneManager.LoadScene("choiceScene");
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("Choicesitting");
     }
 }

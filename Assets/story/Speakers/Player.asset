@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef594dde9f94dc0429efdf15884ba14b, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  speakerName: "\uC774\uC885\uBBFC"
+  speakerName: "\uC8FC\uC778\uACF5"
   textColor: {r: 0.066037714, g: 0.061053734, b: 0.061053734, a: 0.88235295}

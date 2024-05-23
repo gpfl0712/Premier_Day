@@ -1,8 +1,8 @@
-
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-[CreateAssetMenu(fileName ="NewStoryScene",menuName ="Data/New Story Scene")]
+
+[CreateAssetMenu(fileName = "NewStoryScene", menuName = "Data/New Story Scene")]
 [System.Serializable]
 public class StoryScene : ScriptableObject
 {
@@ -10,20 +10,24 @@ public class StoryScene : ScriptableObject
     public Sprite background;
     public StoryScene nextScene;
     public string minigame;
+    public bool IsEnding=false;
+    public string time;
+
     [System.Serializable]
     public struct Sentence
     {
         public string text;
-        public Image Character;
+        public Sprite characterImage; // 嶺?큔???????嶺뚯솘? ?怨뺣뼺?
         public Speaker speaker;
         public List<Choice> choices;
     }
+
     [System.Serializable]
-  
     public class Choice
     {
-        public string text; // ?醫뤾문筌왖 ??용뮞??
-        public StoryScene nextScene; // ?醫뤾문 ????猷????쇱벉 ??
+        public string text;
+        public bool Good;
+        public StoryScene HasItem;
+        public StoryScene nextScene;
     }
-
 }

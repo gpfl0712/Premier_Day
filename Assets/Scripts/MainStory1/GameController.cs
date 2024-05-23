@@ -18,17 +18,20 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        // ??ルㅎ臾며춯?뼿?띠럾? ??戮?뻣??? ??? ?롪퍔?????異????놁졑 嶺뚳퐣瑗??
+        // ????ｋ??쑩됬빊??됱삩???醫딆쓧? ??嶺?筌??? ??? ?嚥▲굧????????????怨몄７ ?꿔꺂??節뉖き??
         if (!bottomBar.isChoiceDisplayed)
         {
-            // ???덉쓡??怨룸츩 ?????裕?嶺뚮씭??????????筌먦끉逾?
+            // ?????깅굳????ㅿ폍筌?????????꿔꺂????????????癲ル슢캉????
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 if (bottomBar.IsCompleted())
                 {
                     if (bottomBar.IsLastSentence())
                     {
-
+                        if(currentScene.IsEnding==true)
+                        {
+                            SceneManager.LoadScene("Ending");
+                        }
                         if (!string.IsNullOrEmpty(currentScene.minigame))
                         {
                             LoadMiniGame(currentScene.minigame);
@@ -45,10 +48,14 @@ public class GameController : MonoBehaviour
     }
     private void LoadMiniGame(string minigame)
     {
-        Debug.Log("미니게임실행");
+        Debug.Log("沃섎챶?꿨칰??뿫??쎈뻬");
         if (minigame == "Math")
         {
             SceneManager.LoadScene("MathGame");
+        }
+        if(minigame=="Launch")
+        {
+            SceneManager.LoadScene("LaunchGame");
         }
 
     }

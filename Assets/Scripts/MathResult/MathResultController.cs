@@ -7,18 +7,20 @@ using TMPro;
 public class ResultController : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-
+    private string currentstory;
     void Start()
     {
-        // PlayerPrefs에서 점수를 불러와서 텍스트에 설정
+        // PlayerPrefs?癒?퐣 ?癒?땾???븍뜄???????용뮞?紐꾨퓠 ??쇱젟
         int finalScore = PlayerPrefs.GetInt("FinalScore", 0);
         scoreText.text = "Final Score: " + finalScore.ToString();
+        currentstory=PlayerPrefs.GetString("CurrentStory");
     }
 
-    // 버튼 클릭 시 호출되는 메서드
+    // 甕곌쑵?????????紐꾪뀱??롫뮉 筌롫뗄苑??
     public void GoToMainStory()
     {
-        // MainStory2 씬으로 이동
-        SceneManager.LoadScene("MainStory2");
+        // MainStory2 ???앮에???猷?
+        SceneManager.LoadScene("SameScene");
+        
     }
 }

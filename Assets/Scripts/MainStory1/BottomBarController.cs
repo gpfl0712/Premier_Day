@@ -10,26 +10,43 @@ public class BottomBarController : MonoBehaviour
 {
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
-    public GameObject choiceButtonPrefab; // ?좏깮吏 踰꾪듉 ?꾨━??
-    public Transform choicesContainer; // ?좏깮吏 而⑦뀒?대꼫
+    public GameObject choiceButtonPrefab;
+    public Transform choicesContainer;
     public BackgroundController backgroundController;
+    public Image characterImageUI; // 嶺?큔???????嶺뚯솘?????戮?뻣??UI Image
+    public TextMeshProUGUI time;
     private int sentenceIndex = -1;
     public StoryScene currentScene;
     private State state = State.COMPLETED;
-    public bool isChoiceDisplayed = false; // ?좏깮吏 ?쒖떆 ?щ?
-
+    public bool isChoiceDisplayed = false;
+    private string currentStory;
+    private int like = 20;
+    private bool mychou;
     private enum State
     {
         PLAYING, COMPLETED
     }
-
+    void Start()
+    {
+        // ???貫留??袁⑹삺 ??쎈꽅???類ｋ궖??揶쎛?紐꾩긾
+        currentStory = PlayerPrefs.GetString("CurrentStory");
+        mychou= (PlayerPrefs.GetInt("mychou", 0) == 1);
+        if(mychou==true)
+        {
+            like += 20;
+        }
+        Debug.Log("Current Story: " + currentStory);
+    }
+    private void Update()
+    {
+        PlayerPrefs.SetInt("like",like);
+    }
     public void PlayScene(StoryScene scene)
     {
         currentScene = scene;
         sentenceIndex = -1;
         PlayNextSentence();
     }
-   
 
     public void PlayNextSentence()
     {
@@ -38,6 +55,8 @@ public class BottomBarController : MonoBehaviour
             sentenceIndex++;
             StopAllCoroutines();
             ClearChoices();
+            Debug.Log("like" + like);
+            time.text=currentScene.time.ToString();
             var sentence = currentScene.sentences[sentenceIndex];
             if (sentence.choices != null && sentence.choices.Count > 0)
             {
@@ -48,11 +67,16 @@ public class BottomBarController : MonoBehaviour
                 StartCoroutine(TypeText(sentence.text));
                 personNameText.text = sentence.speaker.speakerName;
                 personNameText.color = sentence.speaker.textColor;
+
+                // 嶺?큔???????嶺뚯솘??????깆젧
+                if (characterImageUI != null)
+                {
+                    characterImageUI.sprite = sentence.characterImage;
+                    characterImageUI.enabled = sentence.characterImage != null;
+                }
             }
-           
         }
     }
- 
 
     private IEnumerator TypeText(string text)
     {
@@ -78,7 +102,7 @@ public class BottomBarController : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-        isChoiceDisplayed = false; // ?좏깮吏媛 ?쒓굅?섏뿀?뚯쓣 ?쒖떆
+        isChoiceDisplayed = false;
     }
 
     private void ShowChoices(List<Choice> choices)
@@ -90,19 +114,75 @@ public class BottomBarController : MonoBehaviour
             choiceText.text = choice.text;
             Choice choice1 = choice;
             Button choiceButton = choiceButtonObject.GetComponent<Button>();
-            choiceButton.onClick.AddListener(() => OnChoiceSelected(choice1)); // ?몃━寃뚯씠?몃? ?ъ슜?섏뿬 硫붿꽌???몄텧
-            Debug.Log("well done");
+            choiceButton.onClick.AddListener(() => OnChoiceSelected(choice1));
         }
-        isChoiceDisplayed = true; // ?좏깮吏媛 ?쒖떆?섏뿀?뚯쓣 ?쒖떆
+        isChoiceDisplayed = true;
     }
 
     public void OnChoiceSelected(Choice choice)
     {
-        Debug.Log("Choice selected: " + choice.text); // ?좏깮吏媛 ?좏깮?섏뿀?뚯쓣 濡쒓렇??異쒕젰
-        if (choice.nextScene != null)
+        bool keyring = (PlayerPrefs.GetInt("keyring", 0) == 1);
+        bool soccershoes = (PlayerPrefs.GetInt("soccershoes", 0) == 1);
+        bool brickbear = (PlayerPrefs.GetInt("brickbear", 0) == 1);
+        if(choice.Good==true)
         {
-            PlayScene(choice.nextScene);
-            backgroundController.SwitchImage(choice.nextScene.background); // 諛곌꼍 蹂寃??붿껌
+            like += 5;
+        }
+        else
+        {
+            like -= 2;
+        }
+        if (choice.nextScene != null)
+        {   
+            
+            if (currentStory == "Han")
+            {
+                PlayScene(choice.nextScene);
+                backgroundController.SwitchImage(choice.nextScene.background);
+            }
+            if (currentStory == "Choi")
+            {
+                if (brickbear == true)
+                {
+                    Debug.Log("brickbear:"+brickbear);
+                    PlayScene(choice.HasItem);
+                    backgroundController.SwitchImage(choice.HasItem.background);
+                }
+                else
+                {
+                    Debug.Log("brickbear:" + brickbear);
+                    PlayScene(choice.nextScene);
+                    backgroundController.SwitchImage(choice.nextScene.background);
+                }
+            }
+            if (currentStory == "Kang")
+            {
+                if(soccershoes==true)
+                {
+                    PlayScene(choice.HasItem);
+                    backgroundController.SwitchImage(choice.HasItem.background);
+                }
+                else
+                {
+                    PlayScene(choice.nextScene);
+                    backgroundController.SwitchImage(choice.nextScene.background);
+                }
+            }
+            if (currentStory == "Oh")
+            {
+                if (keyring == true)
+                {
+                    PlayScene(choice.HasItem);
+                    backgroundController.SwitchImage(choice.HasItem.background);
+                }
+                else
+                {
+                    PlayScene(choice.nextScene);
+                    backgroundController.SwitchImage(choice.nextScene.background);
+                }
+            }
+        
+           
         }
         else
         {
