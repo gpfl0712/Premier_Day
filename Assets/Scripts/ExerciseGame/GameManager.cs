@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     public void AddScore()
     {
-        _Score.text = "점수: " + ++score;
+        _Score.text = "?癒?땾: " + ++score;
     }
 
     public void AddTime(float time)
@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         _EndGameUI.SetActive(true);
+        PlayerPrefs.SetInt("FinalScore_exe", score);
         _EndGameUI.transform.Find("FinalScore").GetComponent<TMP_Text>().text = "Final Score: " + score;
     }
 
