@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: 2.5`
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uB108 \uC637\uC774 \uADF8\uAC8C \uBB50\uC57C!!"
+    characterImage: {fileID: 21300000, guid: 574812fbf586fb441b6216dbe641f45b, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "\uC65C \uB610 \uC2DC\uBE44\uC57C ;"
+    characterImage: {fileID: 21300000, guid: 01de8507df9b772459c33ddf9167c030, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uC804\uD559\uC0DD \uC654\uB2E4\uACE0 \uAE30\uAC15 \uC7A1\uB294\uAC70\uC57C?\u314B\u314B"
+    characterImage: {fileID: 21300000, guid: c2b398dc1b67c9a4086971db5e9f9972, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uC5F0\uC218\uC57C, \uB108\uB294 \uD56D\uC0C1 \uBCF4\uBA74 \uB108\uBB34
+      \uAE50\uAE50\uD55C \uAC83 \uAC19\uB2E4? \u314B\u314B"
+    characterImage: {fileID: 21300000, guid: 04b8c7eb93a75524e8fffd8a05cba25b, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uB0A8\uC790\uB4E4\uC740 \uADF8\uB7F0 \uC5EC\uC790 \uBCC4\uB85C \uC548
+      \uC88B\uC544\uD574~"
+    characterImage: {fileID: 21300000, guid: 04b8c7eb93a75524e8fffd8a05cba25b, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uBB50\uB77C\uACE0??"
+    characterImage: {fileID: 21300000, guid: 574812fbf586fb441b6216dbe641f45b, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "\uC804\uD559\uC0DD, \uB108\uB294 \uC800\uB7F0 \uBC18\uC7A5 \uAC19\uC740
+      \uC5EC\uC790 \uC5B4\uB54C?"
+    characterImage: {fileID: 21300000, guid: c2b398dc1b67c9a4086971db5e9f9972, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uB108 \uC9C0\uAE08 \uADF8\uAC8C \uBB34\uC2A8 \uC18C\uB9AC\uC57C!!"
+    characterImage: {fileID: 21300000, guid: 574812fbf586fb441b6216dbe641f45b, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "\uC544\uB2C8 \uADF8\uB0E5~ \uC804\uD559\uC0DD\uC740 \uC5B4\uB5BB\uAC8C
+      \uC0DD\uAC01\uD558\uB294\uC9C0 \uAD81\uAE08\uD574\uC11C~"
+    characterImage: {fileID: 21300000, guid: 04b8c7eb93a75524e8fffd8a05cba25b, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uB0B4\uAC00 \uAE50\uAE50\uD55C\uAC70\uB77C\uACE0?"
+    characterImage: {fileID: 21300000, guid: 574812fbf586fb441b6216dbe641f45b, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "\uC804\uD559\uC0DD, \uB108\uB294 \uC800\uB807\uAC8C \uAD50\uCE59\uC744
+      \uC5B4\uACA8\uAC00\uBA70 \uC0AC\uBCF5 \uC785\uB294 \uC5EC\uC790\uAC00 \uC88B\uB2E4\uACE0
+      \uC0DD\uAC01\uD558\uB2C8?"
+    characterImage: {fileID: 21300000, guid: 574812fbf586fb441b6216dbe641f45b, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices:
+    - text: "\uC5B4.. \uADF8\uB798\uB3C4 \uAD50\uCE59\uC740 \uC5B4\uAE30\uB294\uAC74
+        \uC548 \uB418\uC9C0.."
+      Good: 1
+      HasItem: {fileID: 11400000, guid: 43fd199b52963ed4d91281a25e22e045, type: 2}
+      nextScene: {fileID: 11400000, guid: f60a5c16ddd161948be50dadcfcb6d4b, type: 2}
+    - text: "\uC74C.. \uC800\uC815\uB3C4\uB294 \uAC1C\uC778\uC758 \uC790\uC720 \uC544\uB2D0\uAE4C..?"
+      Good: 0
+      HasItem: {fileID: 11400000, guid: 00826ebb579cb884983800c03f85f67f, type: 2}
+      nextScene: {fileID: 11400000, guid: e65a2fa0061ceac4592a9dc7ebc334c3, type: 2}
+  background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
+  nextScene: {fileID: 11400000, guid: b11da5cfa92088e478e280e928b8d2bd, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "\uC26C\uB294\uC2DC\uAC04"

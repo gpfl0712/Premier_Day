@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: 5-2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uC804\uD559\uC0DD \uB108 \uADF8\uB9D0 \uC9C4\uC2EC\uC774\uC57C?"
+    characterImage: {fileID: 21300000, guid: 01de8507df9b772459c33ddf9167c030, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: . . .
+    characterImage: {fileID: 21300000, guid: 04b8c7eb93a75524e8fffd8a05cba25b, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uD558.. \uB458\uC774 \uCC38 \uC798 \uB9DE\uB124 "
+    characterImage: {fileID: 21300000, guid: 01de8507df9b772459c33ddf9167c030, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uB0B4\uAC00 \uB2E4\uB140\uC62C\uAC8C \uB458\uC774 \uD574  \uADF8\uB7FC"
+    characterImage: {fileID: 21300000, guid: 01de8507df9b772459c33ddf9167c030, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: . . .
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: c9456dc810eb03141828869d59aa5a56, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "5\uAD50\uC2DC"

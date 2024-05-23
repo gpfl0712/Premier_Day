@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: 6
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uC624 \uC804\uD559\uC0DD! \uC6B0\uB9AC \uAC19\uC740 \uD300\uC774\uB124!!"
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uC5B4 .. \uADF8\uB7EC\uAC8C..!"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uB108 \uD53C\uAD6C \uC798\uD574?"
+    characterImage: {fileID: 21300000, guid: 928ff3c7265e88044ae22a129a1beb5f, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uC800\uAE30 \uC800 \uD0A4 \uD070 \uCE5C\uAD6C\uAC00 \uC815\uD604\uC774\uAC70\uB4E0?"
+    characterImage: {fileID: 21300000, guid: 928ff3c7265e88044ae22a129a1beb5f, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uC800 \uCE5C\uAD6C\uAC00 \uC9C4\uC9DC \uB0A0\uB835\uD558\uACE0 \uD53C\uAD6C
+      \uC798\uD558\uAC70\uB4E0"
+    characterImage: {fileID: 21300000, guid: 928ff3c7265e88044ae22a129a1beb5f, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uC6B0\uB9AC \uD654\uC774\uD305\uD574\uC11C \uC774\uACA8\uBCF4\uC790!"
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uC5B4,, \uADF8\uB798... \uD654\uC774\uD305!!"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 43f9af77ebe6ac642b7ed048f735a27c, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "6\uAD50\uC2DC"

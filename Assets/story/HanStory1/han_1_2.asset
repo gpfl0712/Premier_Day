@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: han_1_2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uADF8\uB798 \uADF8\uB7FC \uC810\uC2EC \uC2DC\uAC04 \uB05D\uB098\uACE0
+      \uAF2D \uAC19\uC774\uAC00\uC790!"
+    characterImage: {fileID: 21300000, guid: aca7c0ce776921d40b728bcf36c4e450, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "( \uD6C4.. \uADF8\uB798\uB3C4 \uB354 \uCE5C\uD574\uC9C8 \uAE30\uD68C\uAC00
+      \uB418\uACE0 \uC88B\uACA0\uC9C0..! )"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 4a67ab171e2d8cc4aa1ce1120529ab59, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "1\uAD50\uC2DC"

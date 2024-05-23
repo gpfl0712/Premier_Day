@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: kang_1_1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uBBF8\uC548.. \uB3D9\uADDC\uAC00 \uB204\uAD70\uC9C0 \uC798 \uBAA8\uB974\uACA0\uC5B4.."
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uC544 \uADF8\uB798? \uADF8\uB7F4 \uC218 \uC788\uC9C0~"
+    characterImage: {fileID: 21300000, guid: 928ff3c7265e88044ae22a129a1beb5f, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uB0B4 \uC9DD\uC774 \uB41C\uAC70 \uCD95\uD558\uD574 \uB0A8\uC740 \uD559\uAE30\uB3D9\uC548
+      \uC798 \uC9C0\uB0B4\uBCF4\uC790~!"
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uADF8..\uADF8\uB798!"
+    characterImage: {fileID: 21300000, guid: 20b64595f88337d4b91aab375426fd9e, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 4a67ab171e2d8cc4aa1ce1120529ab59, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "1\uAD50\uC2DC"

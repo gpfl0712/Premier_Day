@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
   m_Name: 4_answerJpop
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - text: "\uC5ED\uC2DC \uB108\uB3C4 \uC88B\uC544\uD560 \uC904 \uC54C\uC558\uC5B4!"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 4e18cee1db5b61d458e9a509cf3da76f, type: 2}
   minigame: 
   IsEnding: 0
   time: "4\uAD50\uC2DC"

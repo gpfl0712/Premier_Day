@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
-  m_Name: 2.5_choi_nobear
+  m_Name: 2.5_choi_hasbear`
   m_EditorClassIdentifier: 
   sentences:
   - text: "\uBB50? \uB108\uB3C4 \uAD50\uCE59\uC744 \uC5B4\uACA8\uB3C4 \uB41C\uB2E4\uACE0
@@ -27,7 +27,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
   background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
-  nextScene: {fileID: 11400000, guid: bfed4d7ba4ecd5f4ca497cda79fd389f, type: 2}
+  nextScene: {fileID: 11400000, guid: 0e077590f20cf5444a822aba929f7b70, type: 2}
   minigame: 
   IsEnding: 0
   time: "\uC26C\uB294\uC2DC\uAC04"

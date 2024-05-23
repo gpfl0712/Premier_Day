@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: choi_1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uC5B4 \uBB50\uC57C \uCC98\uC74C\uBCF4\uB294 \uC5BC\uAD74\uC774\uB124"
+    characterImage: {fileID: 21300000, guid: 04b8c7eb93a75524e8fffd8a05cba25b, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uB108 \uC804\uD559\uC0DD\uC774\uC57C?"
+    characterImage: {fileID: 21300000, guid: 01de8507df9b772459c33ddf9167c030, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "( \uC73C\uC544 \uB531 \uBD10\uB3C4 \uBB34\uC11C\uC6B4 \uCE5C\uAD6C\uC796\uC544..
+      )"
+    characterImage: {fileID: 21300000, guid: 7cb321d6f2dfac54789569a4fa106918, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uC5B4.. \uB09C \uC624\uB298 \uC804\uD559 \uC654\uC5B4.."
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uBE48\uC790\uB9AC\uB3C4 \uB9CE\uC740\uB370 \uC65C \uB0B4 \uC606\uC790\uB9AC\uC5D0
+      \uC549\uC740\uAC78\uAE4C~~?"
+    characterImage: {fileID: 21300000, guid: c2b398dc1b67c9a4086971db5e9f9972, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uC5B4..? \uC5B4,, ( \uC544\uBB34\uC0DD\uAC01 \uC5C6\uC774 \uC549\uC740\uAC74\uB370..
+      )"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uB9D0\uD574\uBD10~ \u314B\u314B"
+    characterImage: {fileID: 21300000, guid: 04b8c7eb93a75524e8fffd8a05cba25b, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices:
+    - text: "( \uC194\uC9C1\uD558\uAC8C \uB9D0\uD560\uAE4C? )"
+      Good: 0
+      HasItem: {fileID: 11400000, guid: 7d8e0ae62d09c574a8dfdd92bb4949e5, type: 2}
+      nextScene: {fileID: 11400000, guid: 7d8e0ae62d09c574a8dfdd92bb4949e5, type: 2}
+    - text: "( \uCE5C\uD574\uC9C0\uACE0 \uC2F6\uC5B4\uC11C \uADF8\uB7AC\uB2E4\uACE0
+        \uD560\uAE4C? )"
+      Good: 1
+      HasItem: {fileID: 11400000, guid: 8a353e4d57b678840bfaf3976237f5ba, type: 2}
+      nextScene: {fileID: 11400000, guid: 8a353e4d57b678840bfaf3976237f5ba, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 7d8e0ae62d09c574a8dfdd92bb4949e5, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "1\uAD50\uC2DC"

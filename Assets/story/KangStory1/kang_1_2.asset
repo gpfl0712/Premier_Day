@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: kang_1_2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uADF8.. \uADF8\uB7FC \uB3D9\uADDC \uC54C\uC9C0!"
+    characterImage: {fileID: 21300000, guid: 7cb321d6f2dfac54789569a4fa106918, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uADF8 \uD0A4 \uD06C\uACE0 \uCD95\uAD6C \uC798\uD558\uB294 \uCE5C\uAD6C
+      \uB9DE\uC9C0?"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uC5B4..? \uB0B4\uAC00 \uC544\uB294 \uB3D9\uADDC\uB294 \uD0A4 \uC791\uACE0
+      \uB18D\uAD6C\uB9CC \uC798\uD558\uB294\uB370.."
+    characterImage: {fileID: 21300000, guid: 928ff3c7265e88044ae22a129a1beb5f, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uC544.. \uC544 \uADF8\uB798? \uB0B4\uAC00 \uD5F7\uAC08\uB838\uB098 \uBCF4\uB2E4..\u314E\u314E"
+    characterImage: {fileID: 21300000, guid: 7cb321d6f2dfac54789569a4fa106918, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: .  .  .
+    characterImage: {fileID: 21300000, guid: 5d1db66a9bf398c4fa8b7310a604a944, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 4a67ab171e2d8cc4aa1ce1120529ab59, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "1\uAD50\uC2DC"

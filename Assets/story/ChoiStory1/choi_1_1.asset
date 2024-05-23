@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
-  m_Name: 2.5_choi_nobear
+  m_Name: choi_1_1
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\uBB50? \uB108\uB3C4 \uAD50\uCE59\uC744 \uC5B4\uACA8\uB3C4 \uB41C\uB2E4\uACE0
-      \uC0DD\uAC01\uD558\uB294\uAC70\uC57C?"
-    characterImage: {fileID: 21300000, guid: 574812fbf586fb441b6216dbe641f45b, type: 3}
-    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
-    choices: []
-  - text: "\uC5B4..? \uC544\uB2C8.. \uADF8\uAC74 \uC544\uB2C8\uC9C0\uB9CC..."
+  - text: "\uC0AC\uC2E4.. \uC544\uBB34\uC0DD\uAC01 \uC5C6\uC774 \uC544\uBB34 \uBE48\uC790\uB9AC\uC5D0
+      \uC549\uC740\uAC70\uC57C.."
     characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
-  - text: .  .  .
+  - text: "\uC544 \uC7AC\uBBF8\uC5C6\uC5B4;"
+    characterImage: {fileID: 21300000, guid: 01de8507df9b772459c33ddf9167c030, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uBBF8.. \uBBF8\uC548.."
     characterImage: {fileID: 21300000, guid: 7cb321d6f2dfac54789569a4fa106918, type: 3}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
-  background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
-  nextScene: {fileID: 11400000, guid: bfed4d7ba4ecd5f4ca497cda79fd389f, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 4a67ab171e2d8cc4aa1ce1120529ab59, type: 2}
   minigame: 
   IsEnding: 0
-  time: "\uC26C\uB294\uC2DC\uAC04"
+  time: "1\uAD50\uC2DC"

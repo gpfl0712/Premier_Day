@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: Kang_1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uC548\uB155? \uB108\uAC00 \uC624\uB298 \uC804\uD559\uC628\uAC70\uC9C0?"
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uB098\uB294 \uAC15\uC6A9\uBE48\uC774\uC57C"
+    characterImage: {fileID: 21300000, guid: 928ff3c7265e88044ae22a129a1beb5f, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uC5B4.. \uC548\uB155"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uC5B4\uB514 \uACE0\uB4F1\uD559\uAD50\uC5D0\uC11C \uC804\uD559 \uC628\uAC70\uC57C?"
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "( \uBC14\uB85C \uCD9C\uC2E0 \uC870\uC0AC\uD558\uB294\uAC74\uAC00.. )"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uC5B4.. \uB098\uB294 \uB450\uC131\uACE0\uC5D0\uC11C \uC654\uC5B4.."
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uC5B4! \uB450\uC131\uACE0? \uB108 \uD639\uC2DC \uADF8\uB7FC \uB3D9\uADDC
+      \uC54C\uC544?"
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices: []
+  - text: "\uC5B4? \uB3D9\uADDC...?"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: 
+    characterImage: {fileID: 0}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
+    choices:
+    - text: "( \uB204\uAD6C\uC9C0.. \uBAA8\uB978\uB2E4\uACE0 \uD574\uC57C\uACA0\uB2E4..)"
+      Good: 1
+      HasItem: {fileID: 11400000, guid: 15932c06c854ca94aaa8d3ea0774d8ed, type: 2}
+      nextScene: {fileID: 11400000, guid: 15932c06c854ca94aaa8d3ea0774d8ed, type: 2}
+    - text: "( \uB4E4\uC5B4 \uBCF8 \uAC83 \uAC19\uC740\uB370 \uC544\uB294\uCC99\uC774\uB77C\uB3C4
+        \uD574\uBCFC\uAE4C? )"
+      Good: 0
+      HasItem: {fileID: 11400000, guid: f624293e8dc8d15428d63c83591ceb34, type: 2}
+      nextScene: {fileID: 11400000, guid: f624293e8dc8d15428d63c83591ceb34, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 0}
+  minigame: 
+  IsEnding: 0
+  time: 

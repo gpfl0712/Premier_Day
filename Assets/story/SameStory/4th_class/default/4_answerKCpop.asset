@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
   m_Name: 4_answerKCpop
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - text: "\uC74C \uADF8\uB807\uAD70.."
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
+  - text: "\uC5B8\uC820\uAC00 \uC0C8\uB85C\uC6B4 \uC7A5\uB974\uB97C \uB4E3\uACE0
+      \uC2F6\uB2E4\uBA74 Jpop\uC744 \uAF2D \uB4E4\uC5B4\uBCF4\uB3C4\uB85D \uD574"
+    characterImage: {fileID: 0}
+    speaker: {fileID: 0}
+    choices: []
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 4e18cee1db5b61d458e9a509cf3da76f, type: 2}
   minigame: 
   IsEnding: 0
   time: "4\uAD50\uC2DC"

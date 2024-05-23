@@ -12,8 +12,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
   m_Name: han_1
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - text: "\uC548\uB155?"
+    characterImage: {fileID: 21300000, guid: 869525c4448568a44ba26fc0867daeaf, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "\uB098\uB294 \uC774 \uBC18\uC5D0 \uBC18\uC7A5\uC778 \uD55C\uC5F0\uC218\uC57C!"
+    characterImage: {fileID: 21300000, guid: 869525c4448568a44ba26fc0867daeaf, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "\uBAA8\uB974\uB294\uAC8C \uC788\uC73C\uBA74 \uC5B8\uC81C\uB4E0\uC9C0 \uB098\uC5D0\uAC8C
+      \uBB3C\uC5B4\uBD10!"
+    characterImage: {fileID: 21300000, guid: 869525c4448568a44ba26fc0867daeaf, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "\uC5B4..? \uC5B4..!! \uACE0\uB9C8\uC6CC!"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "( \uB9CE\uC774 \uC801\uADF9\uC801\uC778 \uCE5C\uAD6C\uAD6C\uB098... )"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uC544\uCC38! \uC624\uB298 \uC774 \uD559\uAD50\uC5D0 \uCC98\uC74C \uC654\uC73C\uB2C8\uAE50"
+    characterImage: {fileID: 21300000, guid: 869525c4448568a44ba26fc0867daeaf, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "\uB2E4\uB978 \uAD50\uC2E4\uC774\uB791 \uAE09\uC2DD\uC2E4 \uC704\uCE58\uB3C4
+      \uC798 \uBAA8\uB974\uACA0\uB124?"
+    characterImage: {fileID: 21300000, guid: 869525c4448568a44ba26fc0867daeaf, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "\uB0B4\uAC00 \uC810\uC2EC\uC2DC\uAC04\uC5D0 \uAE09\uC2DD\uC2E4\uAE4C\uC9C0
+      \uAC19\uC774 \uAC00\uC904\uAC8C!"
+    characterImage: {fileID: 21300000, guid: 869525c4448568a44ba26fc0867daeaf, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices: []
+  - text: "( \uC870\uAE08 \uBD80\uB2F4\uC2A4\uB7EC\uC6B4\uB370.. )"
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: 
+    characterImage: {fileID: 21300000, guid: 869525c4448568a44ba26fc0867daeaf, type: 3}
+    speaker: {fileID: 11400000, guid: 3a87a162f96e3a946ad2b6a451f71eab, type: 2}
+    choices:
+    - text: "\uC815\uB9D0 \uACE0\uB9D9\uC9C0\uB9CC \uD63C\uC790 \uAC08\uAC8C.."
+      Good: 0
+      HasItem: {fileID: 11400000, guid: 2fb059fe46f30934db2b210b10d140e6, type: 2}
+      nextScene: {fileID: 11400000, guid: 2fb059fe46f30934db2b210b10d140e6, type: 2}
+    - text: "\uC9C4\uC9DC? \uACE0\uB9C8\uC6CC!!"
+      Good: 1
+      HasItem: {fileID: 11400000, guid: ca08717bcb8ad4642b29ba96cc850f64, type: 2}
+      nextScene: {fileID: 11400000, guid: ca08717bcb8ad4642b29ba96cc850f64, type: 2}
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 2fb059fe46f30934db2b210b10d140e6, type: 2}
   minigame: 
   IsEnding: 0
+  time: "1\uAD50\uC2DC"

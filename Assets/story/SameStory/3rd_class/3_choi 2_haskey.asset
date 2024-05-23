@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bd8c8499c536545998b81cca09e278, type: 3}
+  m_Name: 3_choi 2_haskey
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\uB098 \uC774\uAC70 \uC9C4\uC9DC \uC5B4\uB835\uAC8C \uAD6C\uD55C\uAC70\uC57C!!"
+    characterImage: {fileID: 21300000, guid: 20b64595f88337d4b91aab375426fd9e, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uB108\uB3C4 \uBE0C\uB9AD\uBCA0\uC5B4 \uC88B\uC544\uD558\uB294\uAC70\uC57C?"
+    characterImage: {fileID: 21300000, guid: 20b64595f88337d4b91aab375426fd9e, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
+    choices: []
+  - text: "\uC5B4..? \uC5B4 \uBB50.."
+    characterImage: {fileID: 21300000, guid: a09a5d3f2adb7954bbecc6452924ae93, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  - text: "\uC870\uAE08 \uC88B\uC544\uD55C\uB2E4\uACE0 \uBCFC \uC218 \uC788\uC9C0..!"
+    characterImage: {fileID: 21300000, guid: 04b8c7eb93a75524e8fffd8a05cba25b, type: 3}
+    speaker: {fileID: 11400000, guid: 679f88c57d1077747936f0a22e3c23db, type: 2}
+    choices: []
+  background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
+  nextScene: {fileID: 11400000, guid: 7ca75994eb4807746b32e2f13fb25c56, type: 2}
+  minigame: 
+  IsEnding: 0
+  time: "3\uAD50\uC2DC"
