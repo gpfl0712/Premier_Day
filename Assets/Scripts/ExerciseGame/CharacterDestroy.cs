@@ -6,11 +6,10 @@ public class CharacterDestroy : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
-        if (collision.gameObject.name.Contains("BlueBall"))
-            Debug.Log("BlueBall");
         if (collision.gameObject.name.Contains("RedBall"))
-            Debug.Log("RedBall");
+			GameObject.Find("GameManager").GetComponent<GameManager>().AddTime(-3);
+        if (collision.gameObject.tag == "Ball")
+            Destroy(collision.gameObject);
     }
     // Start is called before the first frame update
     void Start()

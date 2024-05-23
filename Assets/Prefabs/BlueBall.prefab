@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5384091661150663369}
   m_Layer: 5
   m_Name: BlueBall
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 407ac0cae365da147b0f7d9a2c8871f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 200
+  direction: {x: 0, y: 0}
 --- !u!50 &-4534842982918539921
 Rigidbody2D:
   serializedVersion: 4
@@ -119,7 +120,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -140,7 +141,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8045019040316530551}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 459bb1e7e6c05ea4485edca6e2112a0f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
