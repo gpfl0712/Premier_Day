@@ -53,7 +53,7 @@ MonoBehaviour:
       Good: 1
       HasItem: {fileID: 11400000, guid: 8a353e4d57b678840bfaf3976237f5ba, type: 2}
       nextScene: {fileID: 11400000, guid: 8a353e4d57b678840bfaf3976237f5ba, type: 2}
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
   nextScene: {fileID: 11400000, guid: 7d8e0ae62d09c574a8dfdd92bb4949e5, type: 2}
   minigame: 
   IsEnding: 0

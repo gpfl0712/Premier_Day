@@ -59,8 +59,8 @@ MonoBehaviour:
       Good: 0
       HasItem: {fileID: 11400000, guid: f624293e8dc8d15428d63c83591ceb34, type: 2}
       nextScene: {fileID: 11400000, guid: f624293e8dc8d15428d63c83591ceb34, type: 2}
-  background: {fileID: 0}
-  nextScene: {fileID: 0}
+  background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
+  nextScene: {fileID: 11400000, guid: 15932c06c854ca94aaa8d3ea0774d8ed, type: 2}
   minigame: 
   IsEnding: 0
   time: 

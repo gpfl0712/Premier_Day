@@ -43,6 +43,6 @@ MonoBehaviour:
     choices: []
   background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 4e18cee1db5b61d458e9a509cf3da76f, type: 2}
-  minigame: 
+  minigame: Music
   IsEnding: 0
   time: "4\uAD50\uC2DC"

@@ -13,7 +13,7 @@ public class BottomBarController : MonoBehaviour
     public GameObject choiceButtonPrefab;
     public Transform choicesContainer;
     public BackgroundController backgroundController;
-    public Image characterImageUI; // 嶺?큔???????嶺뚯솘?????戮?뻣??UI Image
+    public Image characterImageUI; // 癲?????????癲ル슣??????筌?六??UI Image
     public TextMeshProUGUI time;
     private int sentenceIndex = -1;
     public StoryScene currentScene;
@@ -28,7 +28,7 @@ public class BottomBarController : MonoBehaviour
     }
     void Start()
     {
-        // ???貫留??袁⑹삺 ??쎈꽅???類ｋ궖??揶쎛?紐꾩긾
+        // ???縕ワ쭕??熬곣뫗?????덇퐛???筌먲퐢沅???띠럾??筌뤾쑴湲?
         currentStory = PlayerPrefs.GetString("CurrentStory");
         mychou= (PlayerPrefs.GetInt("mychou", 0) == 1);
         if(mychou==true)
@@ -68,7 +68,7 @@ public class BottomBarController : MonoBehaviour
                 personNameText.text = sentence.speaker.speakerName;
                 personNameText.color = sentence.speaker.textColor;
 
-                // 嶺?큔???????嶺뚯솘??????깆젧
+                // 癲?????????癲ル슣???????源놁젳
                 if (characterImageUI != null)
                 {
                     characterImageUI.sprite = sentence.characterImage;

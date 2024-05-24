@@ -491,7 +491,7 @@ MonoBehaviour:
   backgroundController: {fileID: 446612679}
   characterImageUI: {fileID: 0}
   time: {fileID: 0}
-  currentScene: {fileID: 11400000, guid: 52b33ace5d767c14786d504380b01091, type: 2}
+  currentScene: {fileID: 11400000, guid: e52a7b9d805f1c14194dec4829c19c68, type: 2}
   isChoiceDisplayed: 0
 --- !u!1 &446612676
 GameObject:
@@ -879,7 +879,7 @@ MonoBehaviour:
   backgroundController: {fileID: 446612679}
   characterImageUI: {fileID: 1476677813}
   time: {fileID: 1842285582}
-  currentScene: {fileID: 11400000, guid: 52b33ace5d767c14786d504380b01091, type: 2}
+  currentScene: {fileID: 11400000, guid: e52a7b9d805f1c14194dec4829c19c68, type: 2}
   isChoiceDisplayed: 0
 --- !u!1 &1476677812
 GameObject:
@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6a1821f85b99bf449ec7e9ed785e839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: {fileID: 11400000, guid: 52b33ace5d767c14786d504380b01091, type: 2}
+  currentScene: {fileID: 11400000, guid: e52a7b9d805f1c14194dec4829c19c68, type: 2}
   bottomBar: {fileID: 1057339563}
   backgroundController: {fileID: 446612679}
 --- !u!1660057539 &9223372036854775807

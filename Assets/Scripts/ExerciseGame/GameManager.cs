@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     public void AddScore()
     {
-        _Score.text = "?癒?땾: " + ++score;
+        _Score.text = "????? " + ++score;
     }
 
     public void AddTime(float time)
@@ -43,6 +43,6 @@ public class GameManager : MonoBehaviour
 
     public void NextScene()
     {
-        SceneManager.LoadScene("ExerciseGameResult");
+        SceneManager.LoadScene("schoolend");
     }
 }
