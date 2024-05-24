@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using static StoryScene;
 using UnityEngine.SceneManagement;
+using static StoryScene;
 
 public class BottomBarController : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class BottomBarController : MonoBehaviour
     public GameObject choiceButtonPrefab;
     public Transform choicesContainer;
     public BackgroundController backgroundController;
-    public Image characterImageUI; // 癲?????????癲ル슣??????筌?六??UI Image
+    public Image characterImageUI;
     public TextMeshProUGUI time;
     private int sentenceIndex = -1;
     public StoryScene currentScene;
@@ -22,25 +22,29 @@ public class BottomBarController : MonoBehaviour
     private string currentStory;
     private int like = 20;
     private bool mychou;
+    public GameController gameController;  // GameController 참조 추가
+
     private enum State
     {
         PLAYING, COMPLETED
     }
+
     void Start()
     {
-        // ???縕ワ쭕??熬곣뫗?????덇퐛???筌먲퐢沅???띠럾??筌뤾쑴湲?
         currentStory = PlayerPrefs.GetString("CurrentStory");
-        mychou= (PlayerPrefs.GetInt("mychou", 0) == 1);
-        if(mychou==true)
+        mychou = (PlayerPrefs.GetInt("mychou", 0) == 1);
+        if (mychou == true)
         {
             like += 20;
         }
         Debug.Log("Current Story: " + currentStory);
     }
+
     private void Update()
     {
-        PlayerPrefs.SetInt("like",like);
+        PlayerPrefs.SetInt("like", like);
     }
+
     public void PlayScene(StoryScene scene)
     {
         currentScene = scene;
@@ -56,7 +60,7 @@ public class BottomBarController : MonoBehaviour
             StopAllCoroutines();
             ClearChoices();
             Debug.Log("like" + like);
-            time.text=currentScene.time.ToString();
+            time.text = currentScene.time.ToString();
             var sentence = currentScene.sentences[sentenceIndex];
             if (sentence.choices != null && sentence.choices.Count > 0)
             {
@@ -68,7 +72,6 @@ public class BottomBarController : MonoBehaviour
                 personNameText.text = sentence.speaker.speakerName;
                 personNameText.color = sentence.speaker.textColor;
 
-                // 癲?????????癲ル슣???????源놁젳
                 if (characterImageUI != null)
                 {
                     characterImageUI.sprite = sentence.characterImage;
@@ -124,7 +127,7 @@ public class BottomBarController : MonoBehaviour
         bool keyring = (PlayerPrefs.GetInt("keyring", 0) == 1);
         bool soccershoes = (PlayerPrefs.GetInt("soccershoes", 0) == 1);
         bool brickbear = (PlayerPrefs.GetInt("brickbear", 0) == 1);
-        if(choice.Good==true)
+        if (choice.Good == true)
         {
             like += 5;
         }
@@ -133,10 +136,11 @@ public class BottomBarController : MonoBehaviour
             like -= 2;
         }
         if (choice.nextScene != null)
-        {   
+        {
             
             if (currentStory == "Han")
             {
+                gameController.UpdateCurrentScene(choice.nextScene);
                 PlayScene(choice.nextScene);
                 backgroundController.SwitchImage(choice.nextScene.background);
             }
@@ -144,26 +148,30 @@ public class BottomBarController : MonoBehaviour
             {
                 if (brickbear == true)
                 {
-                    Debug.Log("brickbear:"+brickbear);
+                    Debug.Log("brickbear:" + brickbear);
+                    gameController.UpdateCurrentScene(choice.nextScene);
                     PlayScene(choice.HasItem);
                     backgroundController.SwitchImage(choice.HasItem.background);
                 }
                 else
                 {
                     Debug.Log("brickbear:" + brickbear);
+                    gameController.UpdateCurrentScene(choice.nextScene);
                     PlayScene(choice.nextScene);
                     backgroundController.SwitchImage(choice.nextScene.background);
                 }
             }
             if (currentStory == "Kang")
             {
-                if(soccershoes==true)
+                if (soccershoes == true)
                 {
+                    gameController.UpdateCurrentScene(choice.nextScene);
                     PlayScene(choice.HasItem);
                     backgroundController.SwitchImage(choice.HasItem.background);
                 }
                 else
                 {
+                    gameController.UpdateCurrentScene(choice.nextScene);
                     PlayScene(choice.nextScene);
                     backgroundController.SwitchImage(choice.nextScene.background);
                 }
@@ -172,17 +180,17 @@ public class BottomBarController : MonoBehaviour
             {
                 if (keyring == true)
                 {
+                    gameController.UpdateCurrentScene(choice.nextScene);
                     PlayScene(choice.HasItem);
                     backgroundController.SwitchImage(choice.HasItem.background);
                 }
                 else
                 {
+                    gameController.UpdateCurrentScene(choice.nextScene);
                     PlayScene(choice.nextScene);
                     backgroundController.SwitchImage(choice.nextScene.background);
                 }
             }
-        
-           
         }
         else
         {

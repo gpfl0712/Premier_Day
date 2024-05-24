@@ -493,6 +493,7 @@ MonoBehaviour:
   time: {fileID: 0}
   currentScene: {fileID: 11400000, guid: de194fe3eaab907478387d5913e2920e, type: 2}
   isChoiceDisplayed: 0
+  gameController: {fileID: 1902678580}
 --- !u!1 &446612676
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +700,7 @@ MonoBehaviour:
   time: {fileID: 0}
   currentScene: {fileID: 0}
   isChoiceDisplayed: 0
+  gameController: {fileID: 0}
 --- !u!4 &772163729
 Transform:
   m_ObjectHideFlags: 0
@@ -881,6 +883,7 @@ MonoBehaviour:
   time: {fileID: 1869280682}
   currentScene: {fileID: 11400000, guid: de194fe3eaab907478387d5913e2920e, type: 2}
   isChoiceDisplayed: 0
+  gameController: {fileID: 1902678580}
 --- !u!1 &1476677812
 GameObject:
   m_ObjectHideFlags: 0

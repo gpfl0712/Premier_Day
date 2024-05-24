@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        PlayerPrefs.SetInt("FinalScore_exe", score);
     }
 
     public void AddScore()
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         _EndGameUI.SetActive(true);
-        PlayerPrefs.SetInt("FinalScore_exe", score);
+     
         _EndGameUI.transform.Find("FinalScore").GetComponent<TMP_Text>().text = "Final Score: " + score;
     }
 

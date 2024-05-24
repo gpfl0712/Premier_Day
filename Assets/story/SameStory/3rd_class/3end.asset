@@ -16,5 +16,5 @@ MonoBehaviour:
   background: {fileID: 0}
   nextScene: {fileID: 0}
   minigame: 
-  IsEnding: 0
+  IsEnding: 1
   time: 

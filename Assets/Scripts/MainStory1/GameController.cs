@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static StoryScene;
 
 public class GameController : MonoBehaviour
 {
@@ -18,17 +17,15 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        // ????影?력????몃쭫????源녾텛?????ル늉?? ????癲??? ??? ??棺堉?뤃??????????????ㅼ굣塋??饔낅떽???壤굿?戮㏐광??
         if (!bottomBar.isChoiceDisplayed)
         {
-            // ?????繹먮굛???????깅즽癲?????????饔낅떽??????????????轅붽틓????????
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 if (bottomBar.IsCompleted())
                 {
                     if (bottomBar.IsLastSentence())
                     {
-                        if(currentScene.IsEnding==true)
+                        if (currentScene.IsEnding == true)
                         {
                             SceneManager.LoadScene("Ending");
                         }
@@ -40,31 +37,35 @@ public class GameController : MonoBehaviour
                         bottomBar.PlayScene(currentScene);
                         backgroundController.SwitchImage(currentScene.background);
                     }
-                   
                 }
                 bottomBar.PlayNextSentence();
             }
         }
     }
+
+    public void UpdateCurrentScene(StoryScene newScene)
+    {
+        currentScene = newScene;
+    }
+
     private void LoadMiniGame(string minigame)
     {
-        Debug.Log("雅?퍔瑗띰㎖?饔끸뫁臾???????덈틖");
+        Debug.Log("미니게임 로드 중");
         if (minigame == "Math")
         {
             SceneManager.LoadScene("MathGame");
         }
-        if(minigame=="Exercise")
+        if (minigame == "Exercise")
         {
             SceneManager.LoadScene("ExerciseGame");
         }
-        if(minigame=="Math'")
+        if (minigame == "Math2")
         {
-            SceneManager.LoadScene("MathGame'");
+            SceneManager.LoadScene("MathGame2");
         }
-        if(minigame=="Music")
+        if (minigame == "Music")
         {
             SceneManager.LoadScene("MusicGame");
         }
     }
-
 }

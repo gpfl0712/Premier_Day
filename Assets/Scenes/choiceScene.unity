@@ -492,7 +492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next
+  m_text: "\uC2DC\uC791 "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c4d3513c12ac4e4ba35537dc2f8b91c, type: 2}
   m_sharedMaterial: {fileID: 4207186035992125733, guid: 1c4d3513c12ac4e4ba35537dc2f8b91c, type: 2}
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.962572, b: 0.01886791, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
