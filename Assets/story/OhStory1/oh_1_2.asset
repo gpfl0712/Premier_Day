@@ -43,7 +43,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
   background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
-  nextScene: {fileID: 11400000, guid: 4a67ab171e2d8cc4aa1ce1120529ab59, type: 2}
+  nextScene: {fileID: 11400000, guid: 34178dfe4f154e347adb06b2dd0fdb9b, type: 2}
   minigame: 
   IsEnding: 0
   time: "1\uAD50\uC2DC"
