@@ -14,34 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - text: "\uD6C4.. \uD798\uB4E4\uC5C8\uB2E4.."
-    characterImage: {fileID: 0}
-    speaker: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 7cb321d6f2dfac54789569a4fa106918, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
   - text: "\uC774\uC81C \uC880 \uC26C\uC5B4\uBCFC\uAE4C.."
-    characterImage: {fileID: 0}
-    speaker: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
   - text: "\uC5B4! \uC804\uD559\uC0DD \uC5EC\uAE30\uC788\uC5C8\uB124!"
-    characterImage: {fileID: 0}
-    speaker: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
     choices: []
   - text: "\uC544\uAE4C \uBCF4\uB2C8\uAE4C \uB108\uB3C4 \uCD95\uAD6C\uD654 \uCC59\uACA8\uC628
       \uAC83 \uAC19\uC740\uB370 \uAC19\uC774 \uCD95\uAD6C\uD560\uB798?"
-    characterImage: {fileID: 0}
-    speaker: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
     choices: []
   - text: "\uB0B4\uAC00 \uB07C\uBA74 \uC9D0\uB9CC \uB420 \uAC83 \uAC19\uC740\uB370.."
-    characterImage: {fileID: 0}
-    speaker: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 0503df9cc4fdf154c85e78b9cee3e994, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
   - text: "\uB2E4\uB4E4 \uBABB\uD574\uB3C4 \uC7AC\uBC0C\uC790\uACE0 \uD558\uB294\uAC74\uB370
       \uBB50 \uC5B4\uB54C \uAD1C\uCC2E\uC544!"
-    characterImage: {fileID: 0}
-    speaker: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: e56c77ea95cd29247a718e7a618d2244, type: 3}
+    speaker: {fileID: 11400000, guid: b1b7afe804ea0924d9acb9b3a9498d9e, type: 2}
     choices: []
   - text: "\uC815\uB9D0..? \uADF8\uB7FC \uB098\uB3C4 \uD560\uAC8C!!"
-    characterImage: {fileID: 0}
-    speaker: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 20b64595f88337d4b91aab375426fd9e, type: 3}
+    speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices:
     - text: "( \uCD95\uAD6C\uD654 \uCC59\uACA8\uC624\uAE38 \uC798 \uD5C0\uB2E4..
         )"
@@ -54,7 +54,7 @@ MonoBehaviour:
       HasItem: {fileID: 11400000, guid: cbaefd8a2173b634ea0634e57739bdaa, type: 2}
       nextScene: {fileID: 11400000, guid: cbaefd8a2173b634ea0634e57739bdaa, type: 2}
   background: {fileID: 21300000, guid: 2c56c527781b9f3418cb75053b7dc373, type: 3}
-  nextScene: {fileID: 11400000, guid: cbaefd8a2173b634ea0634e57739bdaa, type: 2}
+  nextScene: {fileID: 11400000, guid: f55eae9e08716d349b4127ef7962caf8, type: 2}
   minigame: 
   IsEnding: 0
   time: "\uC810\uC2EC\uC2DC\uAC04"

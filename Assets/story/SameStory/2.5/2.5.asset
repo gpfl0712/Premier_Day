@@ -73,7 +73,7 @@ MonoBehaviour:
       HasItem: {fileID: 11400000, guid: b0677ac43e4628543b130ba0a756c209, type: 2}
       nextScene: {fileID: 11400000, guid: 29d1c24d1f279a842aafa7969e4e63d3, type: 2}
   background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
-  nextScene: {fileID: 11400000, guid: b11da5cfa92088e478e280e928b8d2bd, type: 2}
+  nextScene: {fileID: 11400000, guid: 0230165211de3804091a00241c93811c, type: 2}
   minigame: 
   IsEnding: 0
   time: "\uC26C\uB294\uC2DC\uAC04"

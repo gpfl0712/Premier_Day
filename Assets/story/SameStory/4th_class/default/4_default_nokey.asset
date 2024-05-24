@@ -15,20 +15,20 @@ MonoBehaviour:
   sentences:
   - text: "\uC885\uBBFC\uC544! \uC9C0\uAE08 \uBB34\uC2A8 \uB178\uB798 \uB4E3\uACE0
       \uC788\uB294\uAC70\uC57C?"
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 20b64595f88337d4b91aab375426fd9e, type: 3}
     speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
     choices: []
   - text: "\uC774\uAC74 tsumiki\uC5D0 shampoo \uB77C\uB294 \uACE1\uC774\uB2E4.."
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: a0a63065c1819f240970696747e13378, type: 3}
     speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
     choices: []
   - text: "\uC544\uD558 Jpop \uC88B\uC544\uD558\uB294\uAD6C\uB098?"
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: 20b64595f88337d4b91aab375426fd9e, type: 3}
     speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
     choices: []
   - text: "\uADF8\uB807\uB2E4, \uB108\uAC00 \uC88B\uC544\uD558\uB294 \uC7A5\uB974\uB294
       \uBB50\uC9C0?"
-    characterImage: {fileID: 0}
+    characterImage: {fileID: 21300000, guid: a0a63065c1819f240970696747e13378, type: 3}
     speaker: {fileID: 11400000, guid: 2c14400871c359d4198124d94ca1c8e3, type: 2}
     choices:
     - text: "\uB098\uB3C4 Jpop \uC88B\uC544\uD574!"
@@ -44,8 +44,8 @@ MonoBehaviour:
       Good: 0
       HasItem: {fileID: 11400000, guid: 0459490abf8cc17488ff627ad8204f29, type: 2}
       nextScene: {fileID: 11400000, guid: 0459490abf8cc17488ff627ad8204f29, type: 2}
-  background: {fileID: 0}
-  nextScene: {fileID: 11400000, guid: 4e18cee1db5b61d458e9a509cf3da76f, type: 2}
+  background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
+  nextScene: {fileID: 11400000, guid: 599e3937c54d72546b86baacd5f2f222, type: 2}
   minigame: 
   IsEnding: 0
   time: "4\uAD50\uC2DC"

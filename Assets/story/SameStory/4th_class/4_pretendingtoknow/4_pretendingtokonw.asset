@@ -55,18 +55,18 @@ MonoBehaviour:
     choices:
     - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 \uBD80\uB9AC\uB098\uC796\uC544!"
       Good: 0
-      HasItem: {fileID: 0}
+      HasItem: {fileID: 11400000, guid: 3b169796c2c8ea9469a0d07df92f00d3, type: 2}
       nextScene: {fileID: 11400000, guid: 3b169796c2c8ea9469a0d07df92f00d3, type: 2}
     - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 \uBD88\uC774\uB098\uC796\uC544!"
       Good: 0
-      HasItem: {fileID: 0}
+      HasItem: {fileID: 11400000, guid: 3e98542bc155a744ea6e37c51d4e47f9, type: 2}
       nextScene: {fileID: 11400000, guid: 3e98542bc155a744ea6e37c51d4e47f9, type: 2}
     - text: "\uCE90\uB9AD\uD130 \uC774\uB984\uC740 \uD478\uB9AC\uB098\uC796\uC544!"
       Good: 0
-      HasItem: {fileID: 0}
+      HasItem: {fileID: 11400000, guid: 3e98542bc155a744ea6e37c51d4e47f9, type: 2}
       nextScene: {fileID: 11400000, guid: 3e98542bc155a744ea6e37c51d4e47f9, type: 2}
   background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
-  nextScene: {fileID: 11400000, guid: 3b169796c2c8ea9469a0d07df92f00d3, type: 2}
+  nextScene: {fileID: 11400000, guid: 139d49c6c3452f645945196b567e653f, type: 2}
   minigame: 
   IsEnding: 0
   time: "4\uAD50\uC2DC"

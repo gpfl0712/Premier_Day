@@ -21,9 +21,9 @@ MonoBehaviour:
     - text: "\uB2E4\uC74C\uC73C\uB85C \uB118\uC5B4\uAC00\uAE30"
       Good: 0
       HasItem: {fileID: 11400000, guid: ebac608eb31b10345a0ea76314ba6550, type: 2}
-      nextScene: {fileID: 11400000, guid: cd2ae51b37840cc48a4ab1508c13ff6a, type: 2}
+      nextScene: {fileID: 11400000, guid: 26488cb5d35286f40b0a916b5ab54718, type: 2}
   background: {fileID: 0}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: f55eae9e08716d349b4127ef7962caf8, type: 2}
   minigame: 
   IsEnding: 0
-  time: 
+  time: "\uC810\uC2EC\uC2DC\uAC04"
