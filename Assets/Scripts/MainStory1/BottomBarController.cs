@@ -137,7 +137,7 @@ public class BottomBarController : MonoBehaviour
         }
         if (choice.nextScene != null)
         {
-            
+
             if (currentStory == "Han")
             {
                 gameController.UpdateCurrentScene(choice.nextScene);
@@ -149,12 +149,12 @@ public class BottomBarController : MonoBehaviour
                 if (brickbear == true)
                 {
                     Debug.Log("brickbear:" + brickbear);
-                    gameController.UpdateCurrentScene(choice.nextScene);
+                    gameController.UpdateCurrentScene(choice.HasItem);
                     PlayScene(choice.HasItem);
                     backgroundController.SwitchImage(choice.HasItem.background);
                 }
                 else
-                {
+                {  
                     Debug.Log("brickbear:" + brickbear);
                     gameController.UpdateCurrentScene(choice.nextScene);
                     PlayScene(choice.nextScene);
@@ -165,7 +165,7 @@ public class BottomBarController : MonoBehaviour
             {
                 if (soccershoes == true)
                 {
-                    gameController.UpdateCurrentScene(choice.nextScene);
+                    gameController.UpdateCurrentScene(choice.HasItem);
                     PlayScene(choice.HasItem);
                     backgroundController.SwitchImage(choice.HasItem.background);
                 }
@@ -180,7 +180,7 @@ public class BottomBarController : MonoBehaviour
             {
                 if (keyring == true)
                 {
-                    gameController.UpdateCurrentScene(choice.nextScene);
+                    gameController.UpdateCurrentScene(choice.HasItem);
                     PlayScene(choice.HasItem);
                     backgroundController.SwitchImage(choice.HasItem.background);
                 }

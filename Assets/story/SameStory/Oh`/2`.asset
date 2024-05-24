@@ -33,6 +33,10 @@ MonoBehaviour:
     characterImage: {fileID: 21300000, guid: 7cb321d6f2dfac54789569a4fa106918, type: 3}
     speaker: {fileID: 11400000, guid: 92bf51282f30a6a4999f3e2fb2661ad1, type: 2}
     choices: []
+  - text: "\uBE48\uCE78\uC5D0 \uC54C\uB9DE\uC740 \uCE74\uB4DC\uB97C \uC120\uD0DD\uD574\uBCF4\uB834!"
+    characterImage: {fileID: 21300000, guid: 7cb321d6f2dfac54789569a4fa106918, type: 3}
+    speaker: {fileID: 11400000, guid: ba5d4aa7cb927e14d81da65c88e17fd4, type: 2}
+    choices: []
   background: {fileID: 21300000, guid: 6daf18a8429f6b845b9f1643eb5164f6, type: 3}
   nextScene: {fileID: 11400000, guid: 831cdec3b5d74924c8a29e1c5f138c36, type: 2}
   minigame: Math2
