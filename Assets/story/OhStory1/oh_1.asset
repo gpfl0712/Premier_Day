@@ -66,12 +66,12 @@ MonoBehaviour:
     choices:
     - text: "\uADF8\uAC8C \uBB54\uB370 \uC539\uB355\uC544;;"
       Good: 1
-      HasItem: {fileID: 11400000, guid: 9b749068b7ef0af47b7b6dcbf46ee25c, type: 2}
+      HasItem: {fileID: 11400000, guid: 3388796ae044f4c42a2f5abf2fdd7d0e, type: 2}
       nextScene: {fileID: 11400000, guid: 3388796ae044f4c42a2f5abf2fdd7d0e, type: 2}
     - text: "\uC544.. \uC544~ \uADF8 \uC774\uBC88\uC5D0 \uC0C8\uB85C\uC6B4 \uCE90\uB9AD\uD130
         \uB098\uC628\uAC70? ( \uC544\uB294\uCC99 \uC774\uB77C\uB3C4 \uD574\uC57C\uACA0\uB2E4..)"
       Good: 0
-      HasItem: {fileID: 11400000, guid: 3388796ae044f4c42a2f5abf2fdd7d0e, type: 2}
+      HasItem: {fileID: 11400000, guid: 16f533f2f11be7e4d895f953f9dae969, type: 2}
       nextScene: {fileID: 11400000, guid: 16f533f2f11be7e4d895f953f9dae969, type: 2}
     - text: ".....( \uC5F4\uC2EC\uD788 \uB4E3\uB294\uCC99\uB9CC \uD574\uC57C\uACA0\uB2E4..)"
       Good: 0
